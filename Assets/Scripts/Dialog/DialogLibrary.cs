@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using Unity.VisualScripting;
 using UnityEngine;
 
@@ -75,9 +76,22 @@ public class DialogLibrary : MonoBehaviour
 
         if (dialogEntries != null)
         {
+            var tagsProvided = new HashSet<string>();
+            var tagsNeeded = new HashSet<string>();
+
             foreach (var entry in dialogEntries)
             {
-                Debug.Log($"Loaded dialog from {entry.Initiator} with priority {entry.Priority}");
+                Debug.Log($"Loaded dialog from {entry.Initiator} with priority {entry.Priority}.");
+                tagsProvided.AddRange(entry.GrantedTags);
+                tagsNeeded.AddRange(entry.RequiredTags);
+            }
+
+            foreach(var neededTag in tagsNeeded)
+            {
+                if (!tagsProvided.Contains(neededTag))
+                {
+                    Debug.LogError($"Uh oh! We need {neededTag} but it doesn't seem to be Granted by any dialog options!");
+                }
             }
 
             knownDialogs = dialogEntries;

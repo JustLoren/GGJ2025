@@ -1,8 +1,19 @@
+using System.Collections.Generic;
+using System.Linq;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class DialogPlayer : MonoBehaviour
 {
+    [System.Serializable]
+    public class ProfilePic
+    {
+        public string Name;
+        public Sprite Sprite;
+    }
+
+    public List<ProfilePic> knownProfiles = new();
     public Image profilePic;
     public TMPro.TextMeshProUGUI dialogText;
     public GameObject nextIndicator, doneIndicator;
@@ -15,6 +26,18 @@ public class DialogPlayer : MonoBehaviour
         this.gameObject.SetActive(true);
         textIndex = 0;
         activeEntry = entry;
+
+        var entryPic = knownProfiles.FirstOrDefault(p => p.Name == entry.ProfilePic);
+
+        if (entryPic != null)
+        {
+            profilePic.sprite = entryPic.Sprite;
+            profilePic.gameObject.SetActive(true);
+        } 
+        else
+        {
+            profilePic.gameObject.SetActive(false);
+        }
         ShowNext();
     }
 
