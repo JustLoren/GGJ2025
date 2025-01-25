@@ -40,12 +40,12 @@ public class DialogPlayer : MonoBehaviour
         } 
         else
         {
-            profilePic.gameObject.SetActive(false);
+            if (profilePic) profilePic.gameObject.SetActive(false);
         }
         ShowNext();
     }
 
-    public bool ShowNext()
+    public virtual bool ShowNext()
     {
         if (textIndex >= activeEntry.TextBlocks.Length)
         {
@@ -64,8 +64,8 @@ public class DialogPlayer : MonoBehaviour
 
         var isDone = textIndex >= activeEntry.TextBlocks.Length;
         
-        doneIndicator.SetActive(isDone);
-        nextIndicator.SetActive(!isDone);
+        if (doneIndicator) doneIndicator.SetActive(isDone);
+        if (nextIndicator) nextIndicator.SetActive(!isDone);
 
         return true;
     }

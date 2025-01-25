@@ -4,7 +4,10 @@ using UnityEngine;
 
 public class MemoryList : MonoBehaviour
 {
+    public int MaxMemories = 3;
+
     public MemoryListItem memoryItemPrefab;
+    public GameOverPlayer GameOverPlayer;
 
     private List<MemoryListItem> items = new();
 
@@ -17,5 +20,10 @@ public class MemoryList : MonoBehaviour
         (memoryItem.transform as RectTransform).anchoredPosition = position;
         memoryItem.Init(entry);
         items.Add(memoryItem);
+
+        if (items.Count >= MaxMemories)
+        {
+            GameOverPlayer.TriggerGameOver();
+        }
     }
 }

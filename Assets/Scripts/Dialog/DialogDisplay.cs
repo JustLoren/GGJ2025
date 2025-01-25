@@ -25,6 +25,7 @@ public class DialogDisplay : MonoBehaviour
 
     private bool activeDialog => DialogPlayer.gameObject.activeSelf;
     private bool activeMemory => MemoryPlayer.gameObject.activeSelf;
+    private bool isGameOver => MemoryList.GameOverPlayer.gameObject.activeSelf;
     
     public void ShowDialog(Interactable interactable)
     {
@@ -116,6 +117,10 @@ public class DialogDisplay : MonoBehaviour
             {
                 MemoryPlayer.Deny();
             }
+        }
+        else if (isGameOver && interactAction.action.WasPressedThisFrame())
+        {
+            MemoryList.GameOverPlayer.ShowNext();
         }
     }
 }

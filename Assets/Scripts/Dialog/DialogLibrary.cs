@@ -1,9 +1,9 @@
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using Unity.VisualScripting;
 using UnityEngine;
-using static UnityEngine.EventSystems.EventTrigger;
 
 public class DialogLibrary : MonoBehaviour
 {
@@ -28,7 +28,6 @@ public class DialogLibrary : MonoBehaviour
     private List<DialogEntry> knownDialogs = new();
     private List<DialogEntry> visitedDialogs = new();
 
-    [Inspectable]
     private HashSet<string> acquiredTags = new();
 
     public bool DialogExists(string actor) => knownDialogs.Any(d => IsValid(actor,d));
@@ -46,7 +45,13 @@ public class DialogLibrary : MonoBehaviour
         return selectedDialog;
     }
 
-    public static void AddTags(string[] tags) => Instance.acquiredTags.AddRange(tags);
+    public event EventHandler OnTagsChanged;
+
+    public static void AddTags(string[] tags)
+    {
+        Instance.acquiredTags.AddRange(tags);
+        Instance.OnTagsChanged?.Invoke(Instance, null);
+    }
 
     public static void RemoveTag(string tag) => Instance.acquiredTags.Remove(tag);
 
@@ -73,13 +78,6 @@ public class DialogLibrary : MonoBehaviour
             return false;
         
         return ValidTags(entry.RequiredTags, entry.ExcludedByTags);
-    }
-
-    public void ResetState()
-    {
-        knownDialogs.AddRange(visitedDialogs);
-        visitedDialogs.Clear();
-        acquiredTags.Clear();
     }
 
 #if UNITY_EDITOR

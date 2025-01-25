@@ -1,9 +1,38 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class Interactable : MonoBehaviour
-{
+{    
+    private void Start()
+    {
+        StartCoroutine(Subscribe());
+    }
+
+    private IEnumerator Subscribe()
+    {
+        yield return null;
+        DialogLibrary.Instance.OnTagsChanged += DialogLibrary_OnTagsChanged;
+        ToggleEffects();
+    }
+
+    private void DialogLibrary_OnTagsChanged(object sender, System.EventArgs e)
+    {
+        ToggleEffects();
+    }
+
+    private void ToggleEffects()
+    {
+        var visible = DialogLibrary.Instance.DialogExists(ActorName);
+
+        if (visible)
+            visualFx.Play(true);
+        else
+            visualFx.Stop();
+    }
+
     public string ActorName;
+    public ParticleSystem visualFx;
     bool _isPrompted = false;
     private void OnTriggerEnter(Collider other)
     {
