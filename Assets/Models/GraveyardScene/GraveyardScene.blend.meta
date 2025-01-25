@@ -3,7 +3,12 @@ guid: 93de0b9b447cfe5488940f3cc7c246ae
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: GraveyardTexture
+    second: {fileID: 2100000, guid: 152b90c586f839d419706ad6194ba499, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
