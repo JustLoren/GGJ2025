@@ -1,0 +1,20 @@
+[
+  {
+    "Initiator": "block",
+    "Priority": 0,
+    "RequiredTags": [],
+    "ExcludedByTags": [],
+    "ProfilePic": "witch",
+    "TextBlocks": ["Hello there!", "Nice to meet you."],
+    "GrantedTags": ["block-lover"]
+  },
+  {
+    "Initiator": "block",
+    "Priority": 10,
+    "RequiredTags": ["block-lover"],
+    "ExcludedByTags": ["tree-lover"],
+    "ProfilePic": "",
+    "TextBlocks": ["Ok, we can stop talking now!"],
+    "GrantedTags": ["block-hater"]
+  }
+]

@@ -4,6 +4,26 @@ using UnityEngine.InputSystem;
 [RequireComponent(typeof(Rigidbody))]
 public class SimpleCharacterController : MonoBehaviour
 {
+    private static SimpleCharacterController _instance;
+    private void Start()
+    {
+        if (_instance == null)
+            _instance = this;
+    }
+
+    private void OnDestroy()
+    {
+        if (_instance == this)
+            _instance = null;
+    }
+
+    public static void AllowMovement(bool allow)
+    {
+        _instance.allowMovement = allow;
+    }
+
+    private bool allowMovement = true;
+
     [Header("Input Action (Vector2)")]
     // Drag & drop your Input Action from the inspector here
     public InputActionReference movementAction;
@@ -41,6 +61,13 @@ public class SimpleCharacterController : MonoBehaviour
 
     private void Update()
     {
+        //No movement allowed, zero this shit out
+        if (!allowMovement)
+        {
+            moveInput = Vector2.zero;
+            return;
+        }
+
         // Read the movement input (Vector2) from the new Input System
         if (movementAction != null)
         {
