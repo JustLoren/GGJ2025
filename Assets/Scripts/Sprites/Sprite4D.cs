@@ -19,7 +19,8 @@ public class Sprite4D : MonoBehaviour
 
         var signedAngle = Vector3.SignedAngle(cameraMain.forward, this.transform.parent.forward, Vector3.up);
 
-        if (Mathf.Abs(signedAngle) >= 67.5f && Mathf.Abs(signedAngle) <= 112.5f)
+        //Uncomment this block when we have a witch front/back
+        //if (Mathf.Abs(signedAngle) >= 67.5f && Mathf.Abs(signedAngle) <= 112.5f)
         {
             spriteRenderer.sprite = sideSprite;
             if (signedAngle < 0)
@@ -27,14 +28,14 @@ public class Sprite4D : MonoBehaviour
             else
                 spriteRenderer.flipX = true;
         }
-        else
-        {
-            spriteRenderer.flipX = false;
+        //else
+        //{
+        //    spriteRenderer.flipX = false;
 
-            if (Mathf.Abs(signedAngle) < 67.5f)
-                spriteRenderer.sprite = backSprite;
-            else
-                spriteRenderer.sprite = frontSprite;
-        }
+        //    if (Mathf.Abs(signedAngle) < 67.5f)
+        //        spriteRenderer.sprite = backSprite;
+        //    else
+        //        spriteRenderer.sprite = frontSprite;
+        //}
     }
 }

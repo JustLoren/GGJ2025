@@ -13,6 +13,7 @@ public class SimpleCharacterController : MonoBehaviour
 
     private Rigidbody rb;
     private Vector2 moveInput;
+    public BouncySprite bouncer;
 
     private void Awake()
     {
@@ -44,14 +45,33 @@ public class SimpleCharacterController : MonoBehaviour
         if (movementAction != null)
         {
             moveInput = movementAction.action.ReadValue<Vector2>();
+            bouncer.SetMoving(moveInput * moveSpeed);
         }
     }
 
+    private void EnsureCamera()
+    {
+        if (cameraMain == null)
+            cameraMain = Camera.main.transform;
+    }
+
+    private Transform cameraMain;
     private void FixedUpdate()
     {
-        var newVelocity = new Vector3(moveInput.x, 0, moveInput.y) * moveSpeed;
+        EnsureCamera();
+
+        var newVelocity = new Vector3(moveInput.x, 0f, moveInput.y);
+        var m_CamForward = Vector3.Scale(cameraMain.forward, new Vector3(1, 0, 1)).normalized;
+        newVelocity = newVelocity.z * m_CamForward + newVelocity.x * cameraMain.right;
+        newVelocity.y = 0f;
+        newVelocity = newVelocity * moveSpeed;
+
         // Move the character with physics
         rb.linearVelocity = newVelocity;
+        if (newVelocity.magnitude > 0)
+        {
+            rb.MoveRotation(Quaternion.LookRotation(newVelocity));
+        }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)

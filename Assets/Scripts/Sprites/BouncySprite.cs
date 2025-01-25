@@ -5,7 +5,6 @@ using UnityEngine;
 public class BouncySprite : MonoBehaviour
 {
     public float minDistanceForBounce = .05f;
-    private Vector3 lastPosition;
 
     private float targetElevation, sourceElevation;
     private Quaternion targetRotation, sourceRotation;
@@ -26,14 +25,20 @@ public class BouncySprite : MonoBehaviour
     private float rotationProgress = 0f;
     private bool rotationDirectionMax;
     private bool isDescending;
+
+    private bool isMoving = false;
+    public void SetMoving(Vector2 speed)
+    {
+        isMoving = speed.magnitude > minDistanceForBounce;
+    }
+
     void Update()
     {
         float bouncePct, rotationPct;
-        var diff = transform.parent.position - lastPosition;
-        if (diff.magnitude > minDistanceForBounce)
+        if (isMoving)
         {
             isDescending = false;
-            lastPosition = transform.parent.position;
+            
             currentBounceFactor = Mathf.Clamp01(currentBounceFactor + Time.deltaTime * bounceFadeFactor);
 
             if (rotationDirectionMax)
@@ -81,7 +86,7 @@ public class BouncySprite : MonoBehaviour
             }
         }
         else
-        {
+        {            
             currentBounceFactor = Mathf.Clamp01(currentBounceFactor - Time.deltaTime * bounceFadeFactor);
 
             if (!isDescending)
