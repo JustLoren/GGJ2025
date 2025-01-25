@@ -1671,7 +1671,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69f5f9e7e6d7eb94da54cd47eafa737f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MaxMemories: 3
+  MaxMemories: 1
   memoryItemPrefab: {fileID: 9025157440444039422, guid: b029c4913fc2f8541bba3b31190d3a80, type: 3}
   GameOverPlayer: {fileID: 7144723499529423797}
   itemHeight: 140
