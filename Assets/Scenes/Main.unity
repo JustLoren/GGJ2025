@@ -229,18 +229,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   knownDialogs:
   - Initiator: Bush
-    Priority: 0
+    Priority: 10
     RequiredTags: []
     ExcludedByTags: []
     ProfilePic: Cupcake
     TextBlocks:
+    - <i>A small cupcake excitedly greets you from behind a bush</i>
     - "Hi! You\u2019re new! You don\u2019t look like you\u2019re here to play. Are
       you lost?"
     - "My brother always said \u2018I\u2019m not lost, I\u2019m hiding!\u2019 when
-      we\u2019d play hide-and-seek. But he\u2019d always end up in the same spot.
-      He wasn\u2019t very good at it."
-    - "Iam the best at hiding. But one day, I wandered too far. I got lost in the
-      forest, and suddenly, the game wasn\u2019t fun anymore."
+      we\u2019d play hide-and-seek. But he always hid in the same spot! He wasn\u2019t
+      very good at it."
+    - I am the best at hiding! You didn't even see me!
+    - "But one day, I wandered too far trying to hide. I got lost in the forest and
+      suddenly, the game wasn\u2019t fun anymore."
     - "It felt scary, like I\u2019d never find my way back. I cried until my brother
       found me. He carried me home, and I never let go of his hand after that."
     GrantedTags:
@@ -252,23 +254,201 @@ MonoBehaviour:
     ExcludedByTags: []
     ProfilePic: Cupcake
     TextBlocks:
+    - <i> A lollipop has been shoved into the ground, clearly watered like a plant.</i>
     - "Do you like Candy! It's my Favorite. My sister and I planted it, hoping it\u2019d
       grow into a lollipop tree."
     - We checked it every single day, laughing about what kind of candy flowers it
       might bloom.
+    - Do you think the trees here like being made of candy?
+    - "I bet they do! Who wouldn\u2019t want to be sweet and colorful all the time?"
     GrantedTags:
-    - Cupcake_Memory
-  - Initiator: game-over
+    - Innocence_Memory
+  - Initiator: Moth
+    Priority: 10
+    RequiredTags: []
+    ExcludedByTags: []
+    ProfilePic: Fairy
+    TextBlocks:
+    - <i> Emerging from the forrest is a small winged creature with glowing moths
+      for compainions. She speaks slowly and softly.</i>
+    - "Oh, you found one. Aren\u2019t they beautiful? Their glow is so gentle, like
+      a tiny flame that doesn\u2019t burn."
+    - "They don\u2019t think about why they shine or where their wings will take
+      them. They simply glow and move forward."
+    - No questions.
+    - No doubts.
+    - Just light.
+    - <i> She pauses, thier gaze distant.</i>
+    - "There\u2019s a kind of freedom in that, don\u2019t you think?"
+    - "To not wonder what\u2019s waiting in the dark, to simply follow what feels
+      warm and safe."
+    - "Maybe we\u2019d all be happier if we did the same."
+    GrantedTags:
+    - Glimmer
+  - Initiator: Lantern
     Priority: 10
     RequiredTags:
-    - Cupcake_Accepted
+    - Glimmer
     ExcludedByTags: []
-    ProfilePic: 
+    ProfilePic: Fairy
     TextBlocks:
-    - This is it.
-    - You've collected all the memories.
-    - The End.
-    GrantedTags: []
+    - <i> Kneeling by the lantern, she speaks again.</i>
+    - "This poor thing\u2026 it once held so much light, but now it\u2019s broken."
+    - "Funny, isn\u2019t it? How we rely on something to hold the glow for us, instead
+      of just becoming the light ourselves."
+    - "But the lantern doesn\u2019t ask why it broke, and the moths don\u2019t mourn
+      its loss. They just move on to the next glow."
+    - <i> The Fairy's voice grows softer, almost wistful.</i>
+    - That's the trick of it really. The less you know, the less it hurts.
+    - Isn't that what we all want? To let the light guide us without ever asking
+      where it leads?
+    GrantedTags:
+    - Ignorance_Memory
+  - Initiator: Feather
+    Priority: 10
+    RequiredTags: []
+    ExcludedByTags: []
+    ProfilePic: Cat
+    TextBlocks:
+    - <i>A ghostly little cat appears nearby, bones of a fish held proudly in it's
+      mouth.</i>
+    - "Oh, that feather? It was my favorite. My person used to wave it in front of
+      me, and I\u2019d pounce!"
+    - Over and over, until we were both laughing so hard we forgot the time.
+    - "It wasn\u2019t really about the feather, though. It was about them."
+    - "Their laugh, their smile, that\u2019s what I really wanted to catch."
+    - Those were the best days, the sun on our backs and nothing to worry about.
+    GrantedTags:
+    - Ghost cat
+  - Initiator: Locket
+    Priority: 10
+    RequiredTags:
+    - Ghost cat
+    ExcludedByTags: []
+    ProfilePic: Cat
+    TextBlocks:
+    - "This\u2026 this was theirs. They never took it off."
+    - "I didn\u2019t know why at first, but I could feel it made them sad."
+    - "I didn\u2019t understand sadness back then, not really, but I knew I had to
+      stay close."
+    - "I\u2019d sit by them, purring, as they held me and this locket. I couldn\u2019t
+      fix what hurt them, but I could be there. And that felt like enough."
+    GrantedTags:
+    - Gratitude_Memory
+  - Initiator: Wilting Flower
+    Priority: 10
+    RequiredTags: []
+    ExcludedByTags: []
+    ProfilePic: Cedric
+    TextBlocks:
+    - <i> A calm and solemen man approaches, brushing dirt from his hands</i>
+    - "Ah, the flower. It didn\u2019t last long, did it?"
+    - "That\u2019s the way of things here. Beauty fades, no matter how carefully
+      we nurture it."
+    - 'Still, I plant them because they remind us of something important:'
+    - That even the briefest life leaves a mark, a moment of color in a gray world.
+    - <i> He kneels to gently pick up the flower, holding it as if it were a treasure.
+      </i>
+    - I think the dead deserve that. To be remembered, not just for who they were,
+      but for how they made the world bloom around them.
+    GrantedTags:
+    - Flower
+  - Initiator: Watering Can
+    Priority: 10
+    RequiredTags:
+    - Flower
+    ExcludedByTags: []
+    ProfilePic: Cedric
+    TextBlocks:
+    - <i> He sighs, reliving a pleasent memory while picking up an the old watering
+      can </i>
+    - This old thing has seen so much work. So many graves tended, so many plants
+      watered.
+    - This was my wife's. She was the one who taught me how to garden, taught me
+      that flowers could bloom even in the darkest places.
+    - "She's the reason I\u2019m here, you know."
+    - "Her grave was the first one I tended. And\u2026 the last one I\u2019ll ever
+      forget."
+    - <i> His voice falters for the briefest of moments. He takes a deep breath,
+      regaining his composure.</i>
+    - "Grief never truly leaves you. It doesn\u2019t fade like the flowers do."
+    - But it changes you, roots itself deep inside.
+    - "It reminds you of what you\u2019ve lost, but also what you\u2019ve gained
+      from the love that came before."
+    GrantedTags:
+    - Grief_Memory
+  - Initiator: Pebble
+    Priority: 10
+    RequiredTags: []
+    ExcludedByTags: []
+    ProfilePic: Korvas
+    TextBlocks:
+    - "Ah, the pebble. It\u2019s small, but it holds weight..."
+    - <i>The hulking rock paused in quiet reflection</i>
+    - There was a flood, a roaring, unstoppable force. My village was in its path.
+      I shattered a mountian to stop it, my rage fueling my strength.
+    - "The waters halted, and the village was safe. But that anger\u2026 it left
+      cracks in the stone, and in me."
+    GrantedTags:
+    - Rock Lover
+  - Initiator: Helmet
+    Priority: 10
+    RequiredTags:
+    - Rock Lover
+    ExcludedByTags: []
+    ProfilePic: Korvas
+    TextBlocks:
+    - <i>The stone figure kneels slowly, a deep rumble in their voice</i>
+    - The helmet belonged to one of my people... I stopped the flood, yes, but my
+      fury carved destruction far beyond what I intended.
+    - "And the land bore the scars of my rage. It\u2019s a heavy weight, carrying
+      that power, knowing what it can do. But I\u2019d bear that flame again."
+    - It is not a gentle flame but an inferno and I'd to anything to keep those I
+      care about safe.
+    GrantedTags:
+    - Rage_Memory
+  - Initiator: Loom
+    Priority: 10
+    RequiredTags: []
+    ExcludedByTags: []
+    ProfilePic: Auren
+    TextBlocks:
+    - <i> A tall, fae-like figure steps forward, their face a blazing inferno </i>
+    - "Ah, my loom. I wove so many dreams into its threads\u2014bright, fiery patterns
+      that burned with life."
+    - "Passion is like that. It doesn\u2019t simmer or fade; it demands to be felt,
+      to be seen."
+    - Every thread I wove burned brighter than the last, until the loom could hold
+      no more.
+    - <i> They chuckle softly, shaking their head. </i>
+    - "It\u2019s dangerous, letting your heart blaze like that. But oh, how beautiful
+      it is while it lasts."
+    GrantedTags:
+    - Auren
+  - Initiator: Banner
+    Priority: 10
+    RequiredTags:
+    - Auren
+    ExcludedByTags: []
+    ProfilePic: Auren
+    TextBlocks:
+    - <i> They pick up the banner delicately, the glowing veins beneath their skin
+      flickering softly.</i>
+    - "This\u2026 was supposed to be my masterpiece. A banner for my people, woven
+      with their stories, their triumphs, their hopes."
+    - "Every thread held meaning, every color told a tale. But passion\u2026 it demands
+      too much sometimes."
+    - I tried to weave everything, to pour my whole being into it, and it unraveled
+      before it was ever complete.
+    - <i> They run their fingers over the edges of the banner, their voice growing
+      wistful.</i>
+    - "It\u2019s a painful thing, leaving something unfinished. But maybe that\u2019s
+      the point."
+    - Passion is a fire that keeps us creating, keeps us reaching.,
+    - "Even when the work isn\u2019t done, the spark it leaves behind is enough to
+      inspire others to continue the story."
+    GrantedTags:
+    - Passion_Memory
 --- !u!4 &267087357
 Transform:
   m_ObjectHideFlags: 0
@@ -485,13 +665,33 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   availableMemories:
   - RequiredTags:
-    - Cupcake_Memory
-    ExcludedByTags: []
-    MemoryText: You have completed the Cupcake storyline
+    - FoundSecretRoom
+    - HasKey
+    ExcludedByTags:
+    - FailedMission
+    MemoryText: I recall the time I discovered the hidden passage using the golden
+      key.
     MemoryAcceptedTags:
-    - Cupcake_Accepted
+    - ReflectivePersonality
     MemoryDeniedTags:
-    - Cupcake_Denied
+    - MissedOpportunity
+  - RequiredTags:
+    - CompletedTutorial
+    ExcludedByTags: []
+    MemoryText: That day, I learned the basics of combat from the old master.
+    MemoryAcceptedTags:
+    - SkilledFighter
+    MemoryDeniedTags:
+    - Untrained
+  - RequiredTags:
+    - SomethingHere
+    ExcludedByTags:
+    - InPrison
+    MemoryText: I remember a distant childhood day, playing in the countryside.
+    MemoryAcceptedTags:
+    - A Thing
+    MemoryDeniedTags:
+    - Trauma
   usedMemories: []
   acceptedMemories: []
 --- !u!4 &379243735

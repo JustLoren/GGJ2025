@@ -52,7 +52,7 @@ public class MemoryLibrary : MonoBehaviour
     [NaughtyAttributes.Button("Import from Json File")]
     private void ImportJson()
     {
-        string path = Path.Combine(Application.dataPath, "dialog.json");
+        string path = Path.Combine(Application.dataPath, "memory.json");
         var memoryEntries = FileLoader.LoadMemoryEntries(path);
 
         if (memoryEntries != null)

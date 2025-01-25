@@ -1,0 +1,23 @@
+[
+  {
+    "RequiredTags": ["FoundSecretRoom", "HasKey"],
+    "ExcludedByTags": ["FailedMission"],
+    "MemoryText": "I recall the time I discovered the hidden passage using the golden key.",
+    "MemoryAcceptedTags": ["ReflectivePersonality"],
+    "MemoryDeniedTags": ["MissedOpportunity"]
+  },
+  {
+    "RequiredTags": ["CompletedTutorial"],
+    "ExcludedByTags": [],
+    "MemoryText": "That day, I learned the basics of combat from the old master.",
+    "MemoryAcceptedTags": ["SkilledFighter"],
+    "MemoryDeniedTags": ["Untrained"]
+  },
+  {
+    "RequiredTags": ["SomethingHere"],
+    "ExcludedByTags": ["InPrison"],
+    "MemoryText": "I remember a distant childhood day, playing in the countryside.",
+    "MemoryAcceptedTags": ["A Thing"],
+    "MemoryDeniedTags": ["Trauma"]
+  }
+]
