@@ -22,8 +22,12 @@ public class DialogPlayer : MonoBehaviour
     private DialogEntry activeEntry = null;
     public void Play(DialogEntry entry)
     {
+        //Turn the player off
+        SimpleCharacterController.AllowMovement(false);
+
         //Turn ourselves on
         this.gameObject.SetActive(true);
+
         textIndex = 0;
         activeEntry = entry;
 
@@ -45,9 +49,14 @@ public class DialogPlayer : MonoBehaviour
     {
         if (textIndex >= activeEntry.TextBlocks.Length)
         {
-            DialogLibrary.Instance.AddTags(activeEntry.GrantedTags);
+            DialogLibrary.AddTags(activeEntry.GrantedTags);
+            
             //Dialog complete!
             this.gameObject.SetActive(false);
+
+            //Turn the player back on
+            SimpleCharacterController.AllowMovement(true);
+
             return false;
         }
 

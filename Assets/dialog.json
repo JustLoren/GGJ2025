@@ -1,20 +1,29 @@
 [
   {
-    "Initiator": "block",
+    "Initiator": "Bush",
     "Priority": 0,
     "RequiredTags": [],
     "ExcludedByTags": [],
-    "ProfilePic": "witch",
-    "TextBlocks": ["Hello there!", "Nice to meet you."],
-    "GrantedTags": ["block-lover"]
+    "ProfilePic": "Cupcake",
+    "TextBlocks": [
+"Hi! You’re new! You don’t look like you’re here to play. Are you lost?",
+
+"My brother always said ‘I’m not lost, I’m hiding!’ when we’d play hide-and-seek. But he’d always end up in the same spot. He wasn’t very good at it.",
+
+"Iam the best at hiding. But one day, I wandered too far. I got lost in the forest, and suddenly, the game wasn’t fun anymore.", 
+
+"It felt scary, like I’d never find my way back. I cried until my brother found me. He carried me home, and I never let go of his hand after that."],
+    "GrantedTags": ["Bushvisit"]
   },
   {
-    "Initiator": "block",
+    "Initiator": "Lolipop",
     "Priority": 10,
-    "RequiredTags": ["block-lover"],
-    "ExcludedByTags": ["tree-lover"],
-    "ProfilePic": "",
-    "TextBlocks": ["Ok, we can stop talking now!"],
-    "GrantedTags": ["block-hater"]
+    "RequiredTags": ["Bushvisit"],
+    "ExcludedByTags": [],
+    "ProfilePic": "Cupcake",
+    "TextBlocks": [
+"Do you like Candy! It's my Favorite. My sister and I planted it, hoping it’d grow into a lollipop tree.", 
+"We checked it every single day, laughing about what kind of candy flowers it might bloom."],
+    "GrantedTags": ["Cupcake_Memory"]
   }
 ]

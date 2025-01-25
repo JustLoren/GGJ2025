@@ -228,27 +228,36 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   knownDialogs:
-  - Initiator: block
+  - Initiator: Bush
     Priority: 0
     RequiredTags: []
     ExcludedByTags: []
-    ProfilePic: witch
+    ProfilePic: Cupcake
     TextBlocks:
-    - Hello there!
-    - Nice to meet you.
+    - "Hi! You\u2019re new! You don\u2019t look like you\u2019re here to play. Are
+      you lost?"
+    - "My brother always said \u2018I\u2019m not lost, I\u2019m hiding!\u2019 when
+      we\u2019d play hide-and-seek. But he\u2019d always end up in the same spot.
+      He wasn\u2019t very good at it."
+    - "Iam the best at hiding. But one day, I wandered too far. I got lost in the
+      forest, and suddenly, the game wasn\u2019t fun anymore."
+    - "It felt scary, like I\u2019d never find my way back. I cried until my brother
+      found me. He carried me home, and I never let go of his hand after that."
     GrantedTags:
-    - block-lover
-  - Initiator: block
+    - Bushvisit
+  - Initiator: Lolipop
     Priority: 10
     RequiredTags:
-    - block-lover
-    ExcludedByTags:
-    - tree-lover
-    ProfilePic: 
+    - Bushvisit
+    ExcludedByTags: []
+    ProfilePic: Cupcake
     TextBlocks:
-    - Ok, we can stop talking now!
+    - "Do you like Candy! It's my Favorite. My sister and I planted it, hoping it\u2019d
+      grow into a lollipop tree."
+    - We checked it every single day, laughing about what kind of candy flowers it
+      might bloom.
     GrantedTags:
-    - block-hater
+    - Cupcake_Memory
 --- !u!4 &267087357
 Transform:
   m_ObjectHideFlags: 0
@@ -434,6 +443,87 @@ MonoBehaviour:
       m_PostInfinity: 2
       m_RotationOrder: 4
   CustomBlends: {fileID: 0}
+--- !u!1 &369104944 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -3228079123891205652, guid: 66a1514bdcc6426478e7a0542b616ba9, type: 3}
+  m_PrefabInstance: {fileID: 1006987285}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &369104948
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 369104944}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 6444689551897962992, guid: 66a1514bdcc6426478e7a0542b616ba9, type: 3}
+--- !u!1 &379243733
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 379243735}
+  - component: {fileID: 379243734}
+  m_Layer: 0
+  m_Name: Memory Library
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &379243734
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 379243733}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e12efe6d7666ca84088fc90ef9d5e6bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  availableMemories:
+  - RequiredTags:
+    - Cupcake_Memory
+    ExcludedByTags: []
+    MemoryText: You have completed the Cupcake storyline
+    MemoryAcceptedTags:
+    - Cupcake_Accepted
+    MemoryDeniedTags:
+    - Cupcake_Denied
+  usedMemories: []
+--- !u!4 &379243735
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 379243733}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &410087039
 GameObject:
   m_ObjectHideFlags: 0
@@ -569,7 +659,7 @@ GameObject:
   - component: {fileID: 614655107}
   - component: {fileID: 614655111}
   m_Layer: 0
-  m_Name: Dialog Trigger
+  m_Name: Bush Trigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -658,7 +748,7 @@ Transform:
   m_GameObject: {fileID: 614655106}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.9, y: 0.34, z: 3.2}
+  m_LocalPosition: {x: 3.08, y: 0.34, z: 7.43}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -676,7 +766,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 233674f7f721bd74187a7b4ecf35d69c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ActorName: block
+  ActorName: Bush
 --- !u!1 &832575517
 GameObject:
   m_ObjectHideFlags: 0
@@ -721,6 +811,128 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &945459101
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 945459106}
+  - component: {fileID: 945459105}
+  - component: {fileID: 945459104}
+  - component: {fileID: 945459103}
+  - component: {fileID: 945459102}
+  m_Layer: 0
+  m_Name: Lollipop Trigger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &945459102
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 945459101}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 233674f7f721bd74187a7b4ecf35d69c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ActorName: Lolipop
+--- !u!65 &945459103
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 945459101}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &945459104
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 945459101}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &945459105
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 945459101}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &945459106
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 945459101}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.5, y: 0.34, z: -3.95}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -785,9 +997,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -3778098563736734365, guid: 66a1514bdcc6426478e7a0542b616ba9, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2105128481}
-    - targetCorrespondingSourceObject: {fileID: 7632299363644036798, guid: 66a1514bdcc6426478e7a0542b616ba9, type: 3}
+    - targetCorrespondingSourceObject: {fileID: -3228079123891205652, guid: 66a1514bdcc6426478e7a0542b616ba9, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1294618737}
+      addedObject: {fileID: 369104948}
   m_SourcePrefab: {fileID: 100100000, guid: 66a1514bdcc6426478e7a0542b616ba9, type: 3}
 --- !u!1 &1071540094
 GameObject:
@@ -1242,33 +1454,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1294618733 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7632299363644036798, guid: 66a1514bdcc6426478e7a0542b616ba9, type: 3}
-  m_PrefabInstance: {fileID: 1006987285}
-  m_PrefabAsset: {fileID: 0}
---- !u!64 &1294618737
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1294618733}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -5451096682486189422, guid: 66a1514bdcc6426478e7a0542b616ba9, type: 3}
 --- !u!1 &2085003654
 GameObject:
   m_ObjectHideFlags: 0
@@ -1455,4 +1640,6 @@ SceneRoots:
   - {fileID: 6566001383304176210}
   - {fileID: 189267503}
   - {fileID: 614655110}
+  - {fileID: 945459106}
   - {fileID: 267087357}
+  - {fileID: 379243735}

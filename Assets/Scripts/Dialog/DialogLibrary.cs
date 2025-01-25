@@ -1,9 +1,9 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using System.Runtime.CompilerServices;
 using Unity.VisualScripting;
 using UnityEngine;
+using static UnityEngine.EventSystems.EventTrigger;
 
 public class DialogLibrary : MonoBehaviour
 {
@@ -26,6 +26,8 @@ public class DialogLibrary : MonoBehaviour
 
     [SerializeField]
     private List<DialogEntry> knownDialogs = new();
+    private List<DialogEntry> visitedDialogs = new();
+
     [Inspectable]
     private HashSet<string> acquiredTags = new();
 
@@ -39,32 +41,45 @@ public class DialogLibrary : MonoBehaviour
         var selectedDialog = sortedDialogs.FirstOrDefault();
 
         knownDialogs.Remove(selectedDialog);
+        visitedDialogs.Add(selectedDialog);
 
         return selectedDialog;
     }
 
-    public void AddTags(string[] tags) => acquiredTags.AddRange(tags);
+    public static void AddTags(string[] tags) => Instance.acquiredTags.AddRange(tags);
 
-    public void RemoveTag(string tag) => acquiredTags.Remove(tag);
+    public static void RemoveTag(string tag) => Instance.acquiredTags.Remove(tag);
+
+    public static bool ValidTags(string[] requiredTags, string[] excludeTags)
+    {
+        foreach (var tag in requiredTags)
+        {
+            if (!Instance.acquiredTags.Contains(tag))
+                return false;
+        }
+
+        foreach (var tag in excludeTags)
+        {
+            if (Instance.acquiredTags.Contains(tag))
+                return false;
+        }
+
+        return true;
+    }
 
     private bool IsValid(string actor, DialogEntry entry)
     {
         if (entry.Initiator != actor)
             return false;
+        
+        return ValidTags(entry.RequiredTags, entry.ExcludedByTags);
+    }
 
-        foreach(var tag in entry.RequiredTags)
-        {
-            if (!acquiredTags.Contains(tag))
-                return false;
-        }
-
-        foreach(var tag in entry.ExcludedByTags)
-        {
-            if (acquiredTags.Contains(tag)) 
-                return false;
-        }
-
-        return true;
+    public void ResetState()
+    {
+        knownDialogs.AddRange(visitedDialogs);
+        visitedDialogs.Clear();
+        acquiredTags.Clear();
     }
 
 #if UNITY_EDITOR
@@ -72,7 +87,7 @@ public class DialogLibrary : MonoBehaviour
     private void ImportJson()
     {
         string path = Path.Combine(Application.dataPath, "dialog.json");
-        List<DialogEntry> dialogEntries = DialogLoader.LoadDialogEntries(path);
+        List<DialogEntry> dialogEntries = FileLoader.LoadDialogEntries(path);
 
         if (dialogEntries != null)
         {
