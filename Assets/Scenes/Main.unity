@@ -180,7 +180,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_FirstSelected: {fileID: 0}
+  m_FirstSelected: {fileID: 1667416246}
   m_sendNavigationEvents: 1
   m_DragThreshold: 10
 --- !u!4 &189267503
@@ -269,7 +269,7 @@ MonoBehaviour:
     ExcludedByTags: []
     ProfilePic: Fairy
     TextBlocks:
-    - <i> Emerging from the forrest is a small winged creature with glowing moths
+    - <i> Emerging from the forest is a small winged creature with glowing moths
       for compainions. She speaks slowly and softly.</i>
     - "Oh, you found one. Aren\u2019t they beautiful? Their glow is so gentle, like
       a tiny flame that doesn\u2019t burn."
@@ -278,7 +278,7 @@ MonoBehaviour:
     - No questions.
     - No doubts.
     - Just light.
-    - <i> She pauses, thier gaze distant.</i>
+    - <i> She pauses, their gaze distant.</i>
     - "There\u2019s a kind of freedom in that, don\u2019t you think?"
     - "To not wonder what\u2019s waiting in the dark, to simply follow what feels
       warm and safe."
@@ -341,7 +341,7 @@ MonoBehaviour:
     ExcludedByTags: []
     ProfilePic: Cedric
     TextBlocks:
-    - <i> A calm and solemen man approaches, brushing dirt from his hands</i>
+    - <i> A calm and solemn man approaches, brushing dirt from his hands</i>
     - "Ah, the flower. It didn\u2019t last long, did it?"
     - "That\u2019s the way of things here. Beauty fades, no matter how carefully
       we nurture it."
@@ -360,8 +360,8 @@ MonoBehaviour:
     ExcludedByTags: []
     ProfilePic: Cedric
     TextBlocks:
-    - <i> He sighs, reliving a pleasent memory while picking up an the old watering
-      can </i>
+    - <i> He sighs, reliving a pleasant memory while picking up an old watering can
+      </i>
     - This old thing has seen so much work. So many graves tended, so many plants
       watered.
     - This was my wife's. She was the one who taught me how to garden, taught me
@@ -665,33 +665,63 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   availableMemories:
   - RequiredTags:
-    - FoundSecretRoom
-    - HasKey
-    ExcludedByTags:
-    - FailedMission
-    MemoryText: I recall the time I discovered the hidden passage using the golden
-      key.
-    MemoryAcceptedTags:
-    - ReflectivePersonality
-    MemoryDeniedTags:
-    - MissedOpportunity
-  - RequiredTags:
-    - CompletedTutorial
+    - Innocence_Memory
     ExcludedByTags: []
-    MemoryText: That day, I learned the basics of combat from the old master.
+    MemoryText: "<i>Lila\u2019s memories sparkle with the joy of innocence, but they
+      also whisper of vulnerability. Even the most carefree moments carry lessons
+      about trust, fear, and finding safety in the people we love.</i>"
     MemoryAcceptedTags:
-    - SkilledFighter
+    - Innocence_Accepted
     MemoryDeniedTags:
-    - Untrained
+    - Innocence_Refused
   - RequiredTags:
-    - SomethingHere
-    ExcludedByTags:
-    - InPrison
-    MemoryText: I remember a distant childhood day, playing in the countryside.
+    - Ignorance_Memory
+    ExcludedByTags: []
+    MemoryText: "<i>Glimmer\u2019s memories hum with quiet simplicity, showing the
+      beauty of ignorance as a shield. But even the softest glow can hide what lies
+      in the shadows.</i>"
     MemoryAcceptedTags:
-    - A Thing
+    - Ignorance_Accepted
     MemoryDeniedTags:
-    - Trauma
+    - Ignorance_Refused
+  - RequiredTags:
+    - Gratitude_Memory
+    ExcludedByTags: []
+    MemoryText: "<i> Bran\u2019s memories radiate warmth and comfort. Gratitude lingers
+      in quiet moments, even in the face of sadness. </i>"
+    MemoryAcceptedTags:
+    - Gratitude_Accepted
+    MemoryDeniedTags:
+    - Gratitude_Refused
+  - RequiredTags:
+    - Grief_Memory
+    ExcludedByTags: []
+    MemoryText: "<i> Cedric\u2019s memories are heavy with quiet sorrow, yet they
+      bloom with resilience. Grief, like a garden, grows from loss but carries with
+      it the seeds of love and remembrance.</i>"
+    MemoryAcceptedTags:
+    - Grief_Accepted
+    MemoryDeniedTags:
+    - Grief_Refused
+  - RequiredTags:
+    - Rage_Memory
+    ExcludedByTags: []
+    MemoryText: "<i>Korvas\u2019 memories pulse with raw intensity. Even the heaviest
+      burdens have value when carried for love.</i>"
+    MemoryAcceptedTags:
+    - Rage_Accepted
+    MemoryDeniedTags:
+    - Rage_Refused
+  - RequiredTags:
+    - Passion_Memory
+    ExcludedByTags: []
+    MemoryText: "<i>Auren\u2019s memories blaze with intensity, showing that passion,
+      though fleeting and consuming, leaves behind the sparks that light the world
+      anew.</i>"
+    MemoryAcceptedTags:
+    - Passion_Accepted
+    MemoryDeniedTags:
+    - Passion_Refused
   usedMemories: []
   acceptedMemories: []
 --- !u!4 &379243735
@@ -915,7 +945,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 112
+  m_Constraints: 116
   m_CollisionDetection: 0
 --- !u!1 &1239259599
 GameObject:
@@ -1162,6 +1192,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1667416246 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8220388044318833466, guid: a747424334492b641adf714a75adcff2, type: 3}
+  m_PrefabInstance: {fileID: 8019635608120145090}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2085003654
 GameObject:
   m_ObjectHideFlags: 0
@@ -1308,6 +1343,107 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1c58d59d5aac1224196daafa9686c811, type: 3}
+--- !u!1001 &8019635608120145090
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5396372183433367494, guid: a747424334492b641adf714a75adcff2, type: 3}
+      propertyPath: m_Name
+      value: Map Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 7595153428675427079, guid: a747424334492b641adf714a75adcff2, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7595153428675427079, guid: a747424334492b641adf714a75adcff2, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7595153428675427079, guid: a747424334492b641adf714a75adcff2, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7595153428675427079, guid: a747424334492b641adf714a75adcff2, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7595153428675427079, guid: a747424334492b641adf714a75adcff2, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7595153428675427079, guid: a747424334492b641adf714a75adcff2, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7595153428675427079, guid: a747424334492b641adf714a75adcff2, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7595153428675427079, guid: a747424334492b641adf714a75adcff2, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7595153428675427079, guid: a747424334492b641adf714a75adcff2, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7595153428675427079, guid: a747424334492b641adf714a75adcff2, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7595153428675427079, guid: a747424334492b641adf714a75adcff2, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7595153428675427079, guid: a747424334492b641adf714a75adcff2, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7595153428675427079, guid: a747424334492b641adf714a75adcff2, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7595153428675427079, guid: a747424334492b641adf714a75adcff2, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7595153428675427079, guid: a747424334492b641adf714a75adcff2, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7595153428675427079, guid: a747424334492b641adf714a75adcff2, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7595153428675427079, guid: a747424334492b641adf714a75adcff2, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7595153428675427079, guid: a747424334492b641adf714a75adcff2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7595153428675427079, guid: a747424334492b641adf714a75adcff2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7595153428675427079, guid: a747424334492b641adf714a75adcff2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8424479862553713463, guid: a747424334492b641adf714a75adcff2, type: 3}
+      propertyPath: witchCharacter
+      value: 
+      objectReference: {fileID: 1072795531}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a747424334492b641adf714a75adcff2, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -1316,6 +1452,7 @@ SceneRoots:
   - {fileID: 1072795531}
   - {fileID: 1239259605}
   - {fileID: 6566001383304176210}
+  - {fileID: 8019635608120145090}
   - {fileID: 189267503}
   - {fileID: 267087357}
   - {fileID: 379243735}

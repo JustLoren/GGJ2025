@@ -1,23 +1,44 @@
 [
   {
-    "RequiredTags": ["FoundSecretRoom", "HasKey"],
-    "ExcludedByTags": ["FailedMission"],
-    "MemoryText": "I recall the time I discovered the hidden passage using the golden key.",
-    "MemoryAcceptedTags": ["ReflectivePersonality"],
-    "MemoryDeniedTags": ["MissedOpportunity"]
-  },
-  {
-    "RequiredTags": ["CompletedTutorial"],
+    "RequiredTags": ["Innocence_Memory"],
     "ExcludedByTags": [],
-    "MemoryText": "That day, I learned the basics of combat from the old master.",
-    "MemoryAcceptedTags": ["SkilledFighter"],
-    "MemoryDeniedTags": ["Untrained"]
+    "MemoryText": "<i>Lila’s memories sparkle with the joy of innocence, but they also whisper of vulnerability. Even the most carefree moments carry lessons about trust, fear, and finding safety in the people we love.</i>",
+    "MemoryAcceptedTags": ["Innocence_Accepted"],
+    "MemoryDeniedTags": ["Innocence_Refused"]
   },
   {
-    "RequiredTags": ["SomethingHere"],
-    "ExcludedByTags": ["InPrison"],
-    "MemoryText": "I remember a distant childhood day, playing in the countryside.",
-    "MemoryAcceptedTags": ["A Thing"],
-    "MemoryDeniedTags": ["Trauma"]
+    "RequiredTags": ["Ignorance_Memory"],
+    "ExcludedByTags": [],
+    "MemoryText": "<i>Glimmer’s memories hum with quiet simplicity, showing the beauty of ignorance as a shield. But even the softest glow can hide what lies in the shadows.</i>",
+    "MemoryAcceptedTags": ["Ignorance_Accepted"],
+    "MemoryDeniedTags": ["Ignorance_Refused"]
+  },
+  {
+    "RequiredTags": ["Gratitude_Memory"],
+    "ExcludedByTags": [],
+    "MemoryText": "<i> Bran’s memories radiate warmth and comfort. Gratitude lingers in quiet moments, even in the face of sadness. </i>",
+    "MemoryAcceptedTags": ["Gratitude_Accepted"],
+    "MemoryDeniedTags": ["Gratitude_Refused"]
+  },
+  {
+    "RequiredTags": ["Grief_Memory"],
+    "ExcludedByTags": [],
+    "MemoryText": "<i> Cedric’s memories are heavy with quiet sorrow, yet they bloom with resilience. Grief, like a garden, grows from loss but carries with it the seeds of love and remembrance.</i>",
+    "MemoryAcceptedTags": ["Grief_Accepted"],
+    "MemoryDeniedTags": ["Grief_Refused"]
+  },
+  {
+    "RequiredTags": ["Rage_Memory"],
+    "ExcludedByTags": [],
+    "MemoryText": "<i>Korvas’ memories pulse with raw intensity. Even the heaviest burdens have value when carried for love.</i>",
+    "MemoryAcceptedTags": ["Rage_Accepted"],
+    "MemoryDeniedTags": ["Rage_Refused"]
+  },
+  {
+    "RequiredTags": ["Passion_Memory"],
+    "ExcludedByTags": [],
+    "MemoryText": "<i>Auren’s memories blaze with intensity, showing that passion, though fleeting and consuming, leaves behind the sparks that light the world anew.</i>",
+    "MemoryAcceptedTags": ["Passion_Accepted"],
+    "MemoryDeniedTags": ["Passion_Refused"]
   }
 ]
