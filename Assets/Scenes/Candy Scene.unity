@@ -312,6 +312,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: CandyScene
       objectReference: {fileID: 0}
+    - target: {fileID: 6070426291127437056, guid: 66a1514bdcc6426478e7a0542b616ba9, type: 3}
+      propertyPath: 'm_Materials.Array.data[1]'
+      value: 
+      objectReference: {fileID: 2100000, guid: df632b57159956c4683f4d5136fbe094, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
