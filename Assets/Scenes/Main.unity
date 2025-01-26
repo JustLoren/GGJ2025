@@ -1717,7 +1717,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4359752489703168837, guid: 1c58d59d5aac1224196daafa9686c811, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -52.28607
+      value: -52.286438
       objectReference: {fileID: 0}
     - target: {fileID: 4359752489703168837, guid: 1c58d59d5aac1224196daafa9686c811, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -1729,7 +1729,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8036172224512282503, guid: 1c58d59d5aac1224196daafa9686c811, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -22.722595
+      value: -22.722717
       objectReference: {fileID: 0}
     - target: {fileID: 8794632355832628162, guid: 1c58d59d5aac1224196daafa9686c811, type: 3}
       propertyPath: m_Name
@@ -1751,6 +1751,10 @@ PrefabInstance:
     - target: {fileID: 5396372183433367494, guid: a747424334492b641adf714a75adcff2, type: 3}
       propertyPath: m_Name
       value: Map Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 5396372183433367494, guid: a747424334492b641adf714a75adcff2, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7595153428675427079, guid: a747424334492b641adf714a75adcff2, type: 3}
       propertyPath: m_Pivot.x
