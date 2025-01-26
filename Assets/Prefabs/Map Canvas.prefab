@@ -810,6 +810,8 @@ MonoBehaviour:
   - {fileID: 8220388044318833466}
   - {fileID: 4191722179904997739}
   - {fileID: 4866936948832656195}
+  - {fileID: 7279345291706648129}
+  - {fileID: 1964086645302729436}
   witchCharacter: {fileID: 0}
 --- !u!1 &7279345291706648129
 GameObject:

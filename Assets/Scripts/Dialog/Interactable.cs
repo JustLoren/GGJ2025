@@ -16,6 +16,11 @@ public class Interactable : MonoBehaviour
         ToggleEffects();
     }
 
+    private void OnDestroy()
+    {
+        DialogLibrary.Instance.OnTagsChanged -= DialogLibrary_OnTagsChanged;
+    }
+
     private void DialogLibrary_OnTagsChanged(object sender, System.EventArgs e)
     {
         ToggleEffects();

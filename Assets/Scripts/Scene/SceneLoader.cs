@@ -65,7 +65,6 @@ public class SceneLoader : MonoBehaviour
 
     // Optionally track the currently loaded sub-scene if you only want ONE sub-scene at a time
     private string currentSubScene;
-    private bool isLoading = false;
 
     /// <summary>
     /// Loads a sub-scene additively on top of the Base (main) Scene.
