@@ -449,6 +449,370 @@ MonoBehaviour:
       inspire others to continue the story."
     GrantedTags:
     - Passion_Memory
+  - Initiator: game-over
+    Priority: 0
+    RequiredTags:
+    - Innocence_Accepted
+    - Gratitude_Accepted
+    - Rage_Accepted
+    ExcludedByTags: []
+    ProfilePic: witch
+    TextBlocks:
+    - "<i> You\u2019ve walked a path shaped by wonder, love, and fury\u2014a journey
+      defined not by perfection, but by the strength to believe, to give, and to
+      fight. The threads of these truths have shaped you, not to forget who you are,
+      but to remind you that hope is not passive\u2014it is the act of believing
+      in what is worth saving. Now, as you step forward, take this light, this strength,
+      and this fire. Not for yourself, but for the world you will save.</i>"
+    - "<i> As each memory slipped away, we hold onto one truth: it wasn\u2019t for
+      nothing. What we lost would allow them to keep what made them whole. They would
+      wake up still knowing who they were, still able to hold their loved ones close,
+      still able to laugh and cry and remember. That\u2019s what mattered. We don't
+      need to remember our journey as long as they could hold onto theirs. Hope isn\u2019t
+      just a light\u2014it\u2019s a choice. And we chose to give them that light.</i>"
+    GrantedTags:
+    - Ending 1
+  - Initiator: game-over
+    Priority: 0
+    RequiredTags:
+    - Ignorance_Accepted
+    - Grief_Accepted
+    - Passion_Accepted
+    ExcludedByTags: []
+    ProfilePic: witch
+    TextBlocks:
+    - "<i> This path has carried you through shadows and flames, through moments
+      of loss and creation. These truths are not easy, but they are necessary. To
+      move forward is to embrace what you do not know, to carry what you cannot change,
+      and to create what the world has never seen. Your step forward is not the end\u2014it
+      is the beginning of a world shaped by what you\u2019ve chosen to leave behind.\u201D</i>"
+    - "<i> When we were faced with the choice, it wasn\u2019t a question of if\u2014it
+      was a question of how much. How much of ourselves could we give to ensure that
+      others could keep what mattered most? We know the cost. Every laugh, every
+      tear, every quiet moment that had shaped me\u2014they would all be gone. I
+      would lose the faces I loved, the voices that carried me through the darkest
+      nights. But it wasn\u2019t about me. It was about them.</i>"
+    GrantedTags:
+    - Ending 2
+  - Initiator: game-over
+    Priority: 0
+    RequiredTags:
+    - Innocence_Accepted
+    - Gratitude_Accepted
+    - Passion_Accepted
+    ExcludedByTags: []
+    ProfilePic: witch
+    TextBlocks:
+    - <i> Innocence taught me the courage to see the world with wonder, finding beauty
+      in even the simplest moments. It is the spark that keeps hope alive. Gratitude
+      reminded me of the strength found in love freely given. It is in these connections
+      that we find the resilience to carry on. Passion burned within me, urging me
+      to create and protect. It is the fire that drives us to dream and reshape the
+      world, even in the face of impossible odds. </i>
+    GrantedTags:
+    - Ending 3
+  - Initiator: game-over
+    Priority: 0
+    RequiredTags:
+    - Innocence_Accepted
+    - Gratitude_Accepted
+    - Grief_Accepted
+    ExcludedByTags: []
+    ProfilePic: witch
+    TextBlocks:
+    - <i> Innocence showed me the courage to believe in something greater, to find
+      joy in the unknown and trust in the beauty of the world. Gratitude taught me
+      that love is found in the smallest gestures and quietest moments. It is the
+      foundation of our strength. Grief revealed that loss is not an ending but a
+      transformation. It roots itself deeply, nurturing the love that endures beyond
+      pain.</i>
+    GrantedTags:
+    - Ending 4
+  - Initiator: game-over
+    Priority: 0
+    RequiredTags:
+    - Innocence_Accepted
+    - Gratitude_Accepted
+    - Ignorance_Accepted
+    ExcludedByTags: []
+    ProfilePic: witch
+    TextBlocks:
+    - <i> Innocence reminded me to see the world as it could be, to dream with courage
+      and step forward with wonder. Gratitude grounded me in love, teaching me that
+      even in silence, connection sustains us. Ignorance showed me the beauty of
+      letting go, of trusting the journey without needing all the answers.</i>
+    GrantedTags:
+    - Ending 5
+  - Initiator: game-over
+    Priority: 0
+    RequiredTags:
+    - Innocence_Accepted
+    - Rage_Accepted
+    - Passion_Accepted
+    ExcludedByTags: []
+    ProfilePic: witch
+    TextBlocks:
+    - <i>Innocence taught me to look at the world with open eyes and an open heart,
+      finding courage in simplicity. Rage showed me the power to fight for what matters,
+      carving paths through despair. Passion ignited my soul, driving me to create
+      and protect with relentless fire.</i>
+    GrantedTags:
+    - Ending 6
+  - Initiator: game-over
+    Priority: 0
+    RequiredTags:
+    - Innocence_Accepted
+    - Rage_Accepted
+    - Grief_Accepted
+    ExcludedByTags: []
+    ProfilePic: witch
+    TextBlocks:
+    - "<i> Innocence reminded me that joy and courage are found in the simplest moments,
+      even in darkness. Rage gave me strength to rise, to protect what matters most.
+      Grief revealed the depth of love\u2014a weight we carry as proof of connection.</i>"
+    GrantedTags:
+    - Ending 7
+  - Initiator: game-over
+    Priority: 0
+    RequiredTags:
+    - Innocence_Accepted
+    - Passion_Accepted
+    - Grief_Accepted
+    ExcludedByTags: []
+    ProfilePic: witch
+    TextBlocks:
+    - <i> Innocence taught me to explore and dream, finding joy in small wonders.
+      Passion burned brightly, urging me to create and protect with unwavering fire.
+      Grief revealed the cost of love, a reminder of the depth and beauty of connection.</i>
+    GrantedTags:
+    - Ending 8
+  - Initiator: game-over
+    Priority: 0
+    RequiredTags: []
+    ExcludedByTags: []
+    ProfilePic: witch
+    TextBlocks:
+    - "<i> This path has carried you through shadows and flames, through moments
+      of loss and creation. These truths are not easy, but they are necessary. To
+      move forward is to embrace what you do not know, to carry what you cannot change,
+      and to create what the world has never seen. Your step forward is not the end\u2014it
+      is the beginning of a world shaped by what you\u2019ve chosen to leave behind.\u201D</i>"
+    - "<i> When we were faced with the choice, it wasn\u2019t a question of if\u2014it
+      was a question of how much. How much of ourselves could we give to ensure that
+      others could keep what mattered most? We know the cost. Every laugh, every
+      tear, every quiet moment that had shaped me\u2014they would all be gone. I
+      would lose the faces I loved, the voices that carried me through the darkest
+      nights. But it wasn\u2019t about me. It was about them.</i>"
+    GrantedTags:
+    - Also Good Ending
+  - Initiator: game-over
+    Priority: 0
+    RequiredTags:
+    - Gratitude_Accepted
+    - Rage_Accepted
+    - Passion_Accepted
+    ExcludedByTags: []
+    ProfilePic: witch
+    TextBlocks:
+    - <i> Gratitude taught me to cherish the connections that make us whole. It is
+      the quiet force that binds us to one another, even in the face of loss. Rage
+      reminded me that strength comes from the fire within. It is the force that
+      pushes us forward, giving us the power to fight for what we believe in. Passion
+      inspired me to create, to burn brightly even when the darkness loomed. It is
+      the spark that fuels our dreams and gives us purpose.</i>
+    GrantedTags:
+    - Ending 9
+  - Initiator: game-over
+    Priority: 0
+    RequiredTags:
+    - Gratitude_Accepted
+    - Passion_Accepted
+    ExcludedByTags: []
+    ProfilePic: witch
+    TextBlocks:
+    - <i>Gratitude reminded me that even in the darkest times, the bonds we share
+      can light our way. Love given freely is the foundation of all that matters.
+      Passion taught me that the fire within us drives us to create and protect.
+      It is a force that shapes the world around us, leaving behind sparks of inspiration.
+      Ignorance revealed the beauty of letting go. Not every answer needs to be found,
+      and not every truth needs to be uncovered. Sometimes, it is enough to trust
+      in the journey.</i>
+    GrantedTags:
+    - Ending 10
+  - Initiator: game-over
+    Priority: 0
+    RequiredTags:
+    - Rage_Accepted
+    - Passion_Accepted
+    - Grief_Accepted
+    ExcludedByTags: []
+    ProfilePic: witch
+    TextBlocks:
+    - <i> Rage taught me to stand firm in the face of despair. It is the fire that
+      burns within us, giving us the strength to protect what matters most. Passion
+      inspired me to create and transform. It is the spark that pushes us to leave
+      a mark on the world, even when the odds are against us. Grief showed me the
+      cost of love and the depth of connection. It is the weight we carry, a reminder
+      that even in sorrow, we find the strength to keep going.</i>
+    GrantedTags:
+    - Ending 11
+  - Initiator: game-over
+    Priority: 0
+    RequiredTags:
+    - Ignorance_Accepted
+    - Rage_Accepted
+    - Grief_Accepted
+    ExcludedByTags: []
+    ProfilePic: witch
+    TextBlocks:
+    - "<i> Ignorance showed me the peace of letting go\u2014the freedom of not holding
+      every burden, of trusting in what lies beyond the horizon. It is not weakness
+      to move forward without all the answers. Rage taught me to fight, to burn brightly
+      against the darkness. It is the fire that carves paths through despair, even
+      when the weight feels unbearable. Grief revealed the depth of love we hold
+      for what we lose. It is a reminder that every tear, every ache, is a testament
+      to the beauty of what once was.</i>"
+    GrantedTags:
+    - Ending 12
+  - Initiator: game-over
+    Priority: 0
+    RequiredTags:
+    - Gratitude_Accepted
+    - Ignorance_Accepted
+    - Grief_Accepted
+    ExcludedByTags: []
+    ProfilePic: witch
+    TextBlocks:
+    - "<i> Gratitude reminded me that the bonds we form are what carry us forward.
+      It is in these connections that we find the strength to endure even the darkest
+      moments. Ignorance showed me the beauty of not knowing, the peace that comes
+      from stepping forward without every question answered. It is not weakness but
+      a different kind of courage. Grief revealed the depths of love\u2014the way
+      loss transforms us and roots us in the memories of what we held dear. It is
+      both the ache and the proof of a life deeply connected.</i>"
+    GrantedTags:
+    - Ending 13
+  - Initiator: game-over
+    Priority: 0
+    RequiredTags:
+    - Gratitude_Accepted
+    - Ignorance_Accepted
+    - Passion_Accepted
+    ExcludedByTags: []
+    ProfilePic: witch
+    TextBlocks:
+    - <i> Gratitude reminded me of the quiet beauty in small moments of kindness.
+      It taught me that love freely given is the foundation upon which hope is built.
+      Ignorance revealed the simplicity of stepping forward without holding the burden
+      of every answer. Sometimes, peace is found in trusting the light ahead. Passion
+      ignited a fire within me, urging me to create, to protect, and to dream beyond
+      what seemed possible. It is the spark that reshapes the world.</i>
+    GrantedTags:
+    - Ending 14
+  - Initiator: game-over
+    Priority: 0
+    RequiredTags:
+    - Ignorance_Accepted
+    - Passion_Accepted
+    - Grief_Accepted
+    ExcludedByTags: []
+    ProfilePic: witch
+    TextBlocks:
+    - <i> Ignorance reminded me that not every question needs an answer. Sometimes,
+      the act of moving forward is enough to keep hope alive. Passion burned within
+      me, a relentless force that demanded I create and protect. It is in this fire
+      that we find the strength to reshape what feels broken. Grief revealed the
+      weight of love lost, the deep ache that lingers when someone is gone. But in
+      that ache, there is proof of the beauty and value of what we had.</i>
+    GrantedTags:
+    - Ending 15
+  - Initiator: game-over
+    Priority: 0
+    RequiredTags:
+    - Ignorance_Accepted
+    - Rage_Accepted
+    - Passion_Accepted
+    ExcludedByTags: []
+    ProfilePic: witch
+    TextBlocks:
+    - <i> Ignorance taught me the peace of letting go, the freedom of not holding
+      every burden too tightly. It is in surrender that we find room to breathe.
+      Rage burned within me, giving me the strength to fight against despair and
+      protect what mattered most. It is a heavy weight, but one worth bearing. Passion
+      fueled my dreams and actions, a fire that reshaped what I thought possible.
+      It is the force that creates light in the darkest moments.</i>
+    GrantedTags:
+    - Ending 16
+  - Initiator: game-over
+    Priority: 0
+    RequiredTags:
+    - Gratitude_Accepted
+    - Rage_Accepted
+    - Grief_Accepted
+    ExcludedByTags: []
+    ProfilePic: witch
+    TextBlocks:
+    - "<i> Gratitude reminded me of the quiet power of love, the strength we find
+      in one another\u2019s presence. It is the anchor that keeps us steady in the
+      storm. Rage showed me the strength to stand firm, to fight for what matters
+      even when hope feels distant. It is the fire that carves paths through despair.
+      Grief revealed the cost of love, the weight we carry when we lose someone dear.
+      But in that weight, there is proof of a love worth carrying.</i>"
+    GrantedTags:
+    - Ending 17
+  - Initiator: game-over
+    Priority: 0
+    RequiredTags:
+    - Rage_Accepted
+    - Ignorance_Accepted
+    - Grief_Accepted
+    ExcludedByTags: []
+    ProfilePic: witch
+    TextBlocks:
+    - <i> Rage burned within me, carving paths through the darkness and giving me
+      the strength to protect those who could not protect themselves. Ignorance taught
+      me the peace of not knowing every answer, the freedom of trusting the journey
+      without carrying every burden. Grief revealed the love that lingers in loss,
+      the depth of connection that remains even when someone is gone. It is the ache
+      that shapes us, even as it reminds us of what truly matters.</i>
+    GrantedTags:
+    - Ending 18
+  - Initiator: game-over
+    Priority: 0
+    RequiredTags:
+    - Innocence_Accepted
+    - Ignorance_Accepted
+    - Passion_Accepted
+    ExcludedByTags: []
+    ProfilePic: witch
+    TextBlocks:
+    - <i> Innocence reminded me that there is beauty in the unknown, the courage
+      to dream and explore without fear. It is the spark that inspires hope in the
+      darkest moments. Ignorance taught me the peace of letting go, of trusting in
+      the journey ahead without holding onto every question. It is not a failing,
+      but a path to quiet freedom. Passion burned within me, urging me to create
+      and protect. It is the relentless fire that shapes the world and leaves behind
+      sparks to light the way for others.</i>
+    GrantedTags:
+    - Ending 19
+  - Initiator: game-over
+    Priority: 0
+    RequiredTags:
+    - Gratitude_Accepted
+    - Ignorance_Accepted
+    - Rage_Accepted
+    ExcludedByTags: []
+    ProfilePic: witch
+    TextBlocks:
+    - "<i> Gratitude reminded me that even in the smallest moments of kindness, we
+      find the strength to move forward. It is the anchor that keeps us steady in
+      the storm. Ignorance taught me that not every answer needs to be uncovered.
+      It is in letting go of burdens we were never meant to carry that we find freedom.
+      Rage showed me the fire within\u2014the strength to rise, to fight, and to
+      protect what matters most. It is the force that carves paths through despair
+      and lights the way for others. </i>"
+    GrantedTags:
+    - Ending 20
 --- !u!4 &267087357
 Transform:
   m_ObjectHideFlags: 0
@@ -667,9 +1031,9 @@ MonoBehaviour:
   - RequiredTags:
     - Innocence_Memory
     ExcludedByTags: []
-    MemoryText: "<i>Lila\u2019s memories sparkle with the joy of innocence, but they
-      also whisper of vulnerability. Even the most carefree moments carry lessons
-      about trust, fear, and finding safety in the people we love.</i>"
+    MemoryText: <i>Innocence is not just a fleeting state but a light that guides
+      us when the world feels too dark to face. It reminds us that no matter how
+      small or scared we feel, there is always hope waiting to be found.</i>
     MemoryAcceptedTags:
     - Innocence_Accepted
     MemoryDeniedTags:
@@ -677,9 +1041,11 @@ MonoBehaviour:
   - RequiredTags:
     - Ignorance_Memory
     ExcludedByTags: []
-    MemoryText: "<i>Glimmer\u2019s memories hum with quiet simplicity, showing the
-      beauty of ignorance as a shield. But even the softest glow can hide what lies
-      in the shadows.</i>"
+    MemoryText: "<i>Ignorance shields us from the burdens we cannot bear. It is not
+      weakness to let the light guide us without asking where it leads. Ignorance
+      is a reprieve, a way to move forward without the heaviness of doubt\u2014but
+      it is in stepping beyond it that we truly grow. Even the softest glow can hide
+      what lies in the shadows.</i>"
     MemoryAcceptedTags:
     - Ignorance_Accepted
     MemoryDeniedTags:
@@ -687,8 +1053,9 @@ MonoBehaviour:
   - RequiredTags:
     - Gratitude_Memory
     ExcludedByTags: []
-    MemoryText: "<i> Bran\u2019s memories radiate warmth and comfort. Gratitude lingers
-      in quiet moments, even in the face of sadness. </i>"
+    MemoryText: <i>Gratitude does not shout; it whispers, reminding us to cherish
+      the moments that make us whole. It is the thread that binds us to others, even
+      when the weight of the world tries to pull us apart </i>
     MemoryAcceptedTags:
     - Gratitude_Accepted
     MemoryDeniedTags:
@@ -696,9 +1063,10 @@ MonoBehaviour:
   - RequiredTags:
     - Grief_Memory
     ExcludedByTags: []
-    MemoryText: "<i> Cedric\u2019s memories are heavy with quiet sorrow, yet they
-      bloom with resilience. Grief, like a garden, grows from loss but carries with
-      it the seeds of love and remembrance.</i>"
+    MemoryText: "<i> The weight of grief\u2014the ache of love that endures beyond
+      loss. Grief is not the end but a beginning. It roots itself deep within us,
+      growing into something that holds us steady, a reminder that every loss is
+      proof of a love worth remembering</i>"
     MemoryAcceptedTags:
     - Grief_Accepted
     MemoryDeniedTags:
@@ -706,8 +1074,10 @@ MonoBehaviour:
   - RequiredTags:
     - Rage_Memory
     ExcludedByTags: []
-    MemoryText: "<i>Korvas\u2019 memories pulse with raw intensity. Even the heaviest
-      burdens have value when carried for love.</i>"
+    MemoryText: <i>Even the heaviest burdens have value when carried for love. Rage
+      is not a weakness, but a force that moves mountains and carves paths through
+      impossible odds. It is the strength to rise against despair, to fight for what
+      matters, even when the cost feels too great.</i>
     MemoryAcceptedTags:
     - Rage_Accepted
     MemoryDeniedTags:
@@ -715,9 +1085,10 @@ MonoBehaviour:
   - RequiredTags:
     - Passion_Memory
     ExcludedByTags: []
-    MemoryText: "<i>Auren\u2019s memories blaze with intensity, showing that passion,
-      though fleeting and consuming, leaves behind the sparks that light the world
-      anew.</i>"
+    MemoryText: "<i>The fire of passion\u2014the relentless drive to create, to protect,
+      to leave a mark. From Auren, Passion is both a gift and a curse, a flame that
+      burns bright even as it consumes. It is in the act of creation that we find
+      meaning, even if the work is left unfinished.</i>"
     MemoryAcceptedTags:
     - Passion_Accepted
     MemoryDeniedTags:

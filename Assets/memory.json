@@ -2,42 +2,42 @@
   {
     "RequiredTags": ["Innocence_Memory"],
     "ExcludedByTags": [],
-    "MemoryText": "<i>Lila’s memories sparkle with the joy of innocence, but they also whisper of vulnerability. Even the most carefree moments carry lessons about trust, fear, and finding safety in the people we love.</i>",
+    "MemoryText": "<i>Innocence is not just a fleeting state but a light that guides us when the world feels too dark to face. It reminds us that no matter how small or scared we feel, there is always hope waiting to be found.</i>",
     "MemoryAcceptedTags": ["Innocence_Accepted"],
     "MemoryDeniedTags": ["Innocence_Refused"]
   },
   {
     "RequiredTags": ["Ignorance_Memory"],
     "ExcludedByTags": [],
-    "MemoryText": "<i>Glimmer’s memories hum with quiet simplicity, showing the beauty of ignorance as a shield. But even the softest glow can hide what lies in the shadows.</i>",
+    "MemoryText": "<i>Ignorance shields us from the burdens we cannot bear. It is not weakness to let the light guide us without asking where it leads. Ignorance is a reprieve, a way to move forward without the heaviness of doubt—but it is in stepping beyond it that we truly grow. Even the softest glow can hide what lies in the shadows.</i>",
     "MemoryAcceptedTags": ["Ignorance_Accepted"],
     "MemoryDeniedTags": ["Ignorance_Refused"]
   },
   {
     "RequiredTags": ["Gratitude_Memory"],
     "ExcludedByTags": [],
-    "MemoryText": "<i> Bran’s memories radiate warmth and comfort. Gratitude lingers in quiet moments, even in the face of sadness. </i>",
+    "MemoryText": "<i>Gratitude does not shout; it whispers, reminding us to cherish the moments that make us whole. It is the thread that binds us to others, even when the weight of the world tries to pull us apart </i>",
     "MemoryAcceptedTags": ["Gratitude_Accepted"],
     "MemoryDeniedTags": ["Gratitude_Refused"]
   },
   {
     "RequiredTags": ["Grief_Memory"],
     "ExcludedByTags": [],
-    "MemoryText": "<i> Cedric’s memories are heavy with quiet sorrow, yet they bloom with resilience. Grief, like a garden, grows from loss but carries with it the seeds of love and remembrance.</i>",
+    "MemoryText": "<i> The weight of grief—the ache of love that endures beyond loss. Grief is not the end but a beginning. It roots itself deep within us, growing into something that holds us steady, a reminder that every loss is proof of a love worth remembering</i>",
     "MemoryAcceptedTags": ["Grief_Accepted"],
     "MemoryDeniedTags": ["Grief_Refused"]
   },
   {
     "RequiredTags": ["Rage_Memory"],
     "ExcludedByTags": [],
-    "MemoryText": "<i>Korvas’ memories pulse with raw intensity. Even the heaviest burdens have value when carried for love.</i>",
+    "MemoryText": "<i>Even the heaviest burdens have value when carried for love. Rage is not a weakness, but a force that moves mountains and carves paths through impossible odds. It is the strength to rise against despair, to fight for what matters, even when the cost feels too great.</i>",
     "MemoryAcceptedTags": ["Rage_Accepted"],
     "MemoryDeniedTags": ["Rage_Refused"]
   },
   {
     "RequiredTags": ["Passion_Memory"],
     "ExcludedByTags": [],
-    "MemoryText": "<i>Auren’s memories blaze with intensity, showing that passion, though fleeting and consuming, leaves behind the sparks that light the world anew.</i>",
+    "MemoryText": "<i>The fire of passion—the relentless drive to create, to protect, to leave a mark. From Auren, Passion is both a gift and a curse, a flame that burns bright even as it consumes. It is in the act of creation that we find meaning, even if the work is left unfinished.</i>",
     "MemoryAcceptedTags": ["Passion_Accepted"],
     "MemoryDeniedTags": ["Passion_Refused"]
   }

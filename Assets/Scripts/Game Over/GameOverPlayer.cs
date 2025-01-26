@@ -25,7 +25,7 @@ public class GameOverPlayer : DialogPlayer
             //Ok we're done!
 
             //Reload the main scene
-            SceneManager.LoadScene("Main", LoadSceneMode.Single);
+            SceneManager.LoadScene("Title", LoadSceneMode.Single);
         }
 
         return result;

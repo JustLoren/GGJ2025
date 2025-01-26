@@ -71,6 +71,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ActorName: Bush
   visualFx: {fileID: 1811197513842091654}
+  spriteObj: {fileID: 5492699260067883894}
 --- !u!198 &1811197513842091654
 ParticleSystem:
   m_ObjectHideFlags: 0

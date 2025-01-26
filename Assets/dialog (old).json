@@ -1,0 +1,272 @@
+[
+  {
+    "Initiator": "Bush",
+    "Priority": 10,
+    "RequiredTags": [
+
+    ],
+    "ExcludedByTags": [
+
+    ],
+    "ProfilePic": "Cupcake",
+    "TextBlocks": [
+      "<i>A small cupcake excitedly greets you from behind a bush</i>",
+      "Hi! You’re new! You don’t look like you’re here to play. Are you lost?",
+      "My brother always said ‘I’m not lost, I’m hiding!’ when we’d play hide-and-seek. But he always hid in the same spot! He wasn’t very good at it.",
+      "I am the best at hiding! You didn't even see me!",
+      "But one day, I wandered too far trying to hide. I got lost in the forest and suddenly, the game wasn’t fun anymore.",
+      "It felt scary, like I’d never find my way back. I cried until my brother found me. He carried me home, and I never let go of his hand after that."
+    ],
+    "GrantedTags": [
+      "Bushvisit"
+    ]
+  },
+  {
+    "Initiator": "Lolipop",
+    "Priority": 10,
+    "RequiredTags": [
+      "Bushvisit"
+    ],
+    "ExcludedByTags": [
+
+    ],
+    "ProfilePic": "Cupcake",
+    "TextBlocks": [
+      "<i> A lollipop has been shoved into the ground, clearly watered like a plant.</i>",
+      "Do you like Candy! It's my Favorite. My sister and I planted it, hoping it’d grow into a lollipop tree.",
+      "We checked it every single day, laughing about what kind of candy flowers it might bloom.",
+      "Do you think the trees here like being made of candy?",
+      "I bet they do! Who wouldn’t want to be sweet and colorful all the time?"
+
+    ],
+    "GrantedTags": [
+      "Innocence_Memory"
+    ]
+  },
+  {
+    "Initiator": "Moth",
+    "Priority": 10,
+    "RequiredTags": [
+
+    ],
+    "ExcludedByTags": [
+
+    ],
+    "ProfilePic": "Fairy",
+    "TextBlocks": [
+      "<i> Emerging from the forest is a small winged creature with glowing moths for compainions. She speaks slowly and softly.</i>",
+      "Oh, you found one. Aren’t they beautiful? Their glow is so gentle, like a tiny flame that doesn’t burn.",
+      "They don’t think about why they shine or where their wings will take them. They simply glow and move forward.",
+      "No questions.",
+      "No doubts.",
+      "Just light.",
+      "<i> She pauses, their gaze distant.</i>",
+      "There’s a kind of freedom in that, don’t you think?",
+      "To not wonder what’s waiting in the dark, to simply follow what feels warm and safe.",
+      "Maybe we’d all be happier if we did the same."
+    ],
+    "GrantedTags": [
+      "Glimmer"
+    ]
+  },
+  {
+    "Initiator": "Lantern",
+    "Priority": 10,
+    "RequiredTags": [
+      "Glimmer"
+    ],
+    "ExcludedByTags": [
+
+    ],
+    "ProfilePic": "Fairy",
+    "TextBlocks": [
+      "<i> Kneeling by the lantern, she speaks again.</i>",
+      "This poor thing… it once held so much light, but now it’s broken.",
+      "Funny, isn’t it? How we rely on something to hold the glow for us, instead of just becoming the light ourselves.",
+      "But the lantern doesn’t ask why it broke, and the moths don’t mourn its loss. They just move on to the next glow.",
+      "<i> The Fairy's voice grows softer, almost wistful.</i>",
+      "That's the trick of it really. The less you know, the less it hurts.",
+      "Isn't that what we all want? To let the light guide us without ever asking where it leads?"
+    ],
+    "GrantedTags": [
+      "Ignorance_Memory"
+    ]
+  },
+  {
+    "Initiator": "Feather",
+    "Priority": 10,
+    "RequiredTags": [
+
+    ],
+    "ExcludedByTags": [
+
+    ],
+    "ProfilePic": "Cat",
+    "TextBlocks": [
+      "<i>A ghostly little cat appears nearby, bones of a fish held proudly in it's mouth.</i>",
+      "Oh, that feather? It was my favorite. My person used to wave it in front of me, and I’d pounce!",
+      "Over and over, until we were both laughing so hard we forgot the time.",
+      "It wasn’t really about the feather, though. It was about them.",
+      "Their laugh, their smile, that’s what I really wanted to catch.",
+      "Those were the best days, the sun on our backs and nothing to worry about."
+    ],
+    "GrantedTags": [
+      "Ghost cat"
+    ]
+  },
+  {
+    "Initiator": "Locket",
+    "Priority": 10,
+    "RequiredTags": [
+      "Ghost cat"
+    ],
+    "ExcludedByTags": [
+
+    ],
+    "ProfilePic": "Cat",
+    "TextBlocks": [
+      "This… this was theirs. They never took it off.",
+      "I didn’t know why at first, but I could feel it made them sad.",
+      "I didn’t understand sadness back then, not really, but I knew I had to stay close.",
+      "I’d sit by them, purring, as they held me and this locket. I couldn’t fix what hurt them, but I could be there. And that felt like enough."
+    ],
+    "GrantedTags": [
+      "Gratitude_Memory"
+    ]
+  },
+  {
+    "Initiator": "Wilting Flower",
+    "Priority": 10,
+    "RequiredTags": [
+
+    ],
+    "ExcludedByTags": [
+
+    ],
+    "ProfilePic": "Cedric",
+    "TextBlocks": [
+      "<i> A calm and solemn man approaches, brushing dirt from his hands</i>",
+      "Ah, the flower. It didn’t last long, did it?",
+      "That’s the way of things here. Beauty fades, no matter how carefully we nurture it.",
+      "Still, I plant them because they remind us of something important:",
+      "That even the briefest life leaves a mark, a moment of color in a gray world.",
+      "<i> He kneels to gently pick up the flower, holding it as if it were a treasure. </i>",
+      "I think the dead deserve that. To be remembered, not just for who they were, but for how they made the world bloom around them."
+    ],
+    "GrantedTags": [
+      "Flower"
+    ]
+  },
+  {
+    "Initiator": "Watering Can",
+    "Priority": 10,
+    "RequiredTags": [
+      "Flower"
+    ],
+    "ExcludedByTags": [
+
+    ],
+    "ProfilePic": "Cedric",
+    "TextBlocks": [
+      "<i> He sighs, reliving a pleasant memory while picking up an old watering can </i>",
+      "This old thing has seen so much work. So many graves tended, so many plants watered.",
+      "This was my wife's. She was the one who taught me how to garden, taught me that flowers could bloom even in the darkest places.",
+      "She's the reason I’m here, you know.",
+      "Her grave was the first one I tended. And… the last one I’ll ever forget.",
+      "<i> His voice falters for the briefest of moments. He takes a deep breath, regaining his composure.</i>",
+      "Grief never truly leaves you. It doesn’t fade like the flowers do.",
+      "But it changes you, roots itself deep inside.",
+      "It reminds you of what you’ve lost, but also what you’ve gained from the love that came before."
+    ],
+    "GrantedTags": [
+      "Grief_Memory"
+    ]
+  },
+  {
+    "Initiator": "Pebble",
+    "Priority": 10,
+    "RequiredTags": [
+
+    ],
+    "ExcludedByTags": [
+
+    ],
+    "ProfilePic": "Korvas",
+    "TextBlocks": [
+      "Ah, the pebble. It’s small, but it holds weight...",
+      "<i>The hulking rock paused in quiet reflection</i>",
+      "There was a flood, a roaring, unstoppable force. My village was in its path. I shattered a mountian to stop it, my rage fueling my strength.",
+      "The waters halted, and the village was safe. But that anger… it left cracks in the stone, and in me."
+    ],
+    "GrantedTags": [
+      "Rock Lover"
+    ]
+  },
+  {
+    "Initiator": "Helmet",
+    "Priority": 10,
+    "RequiredTags": [
+      "Rock Lover"
+    ],
+    "ExcludedByTags": [
+
+    ],
+    "ProfilePic": "Korvas",
+    "TextBlocks": [
+      "<i>The stone figure kneels slowly, a deep rumble in their voice</i>",
+      "The helmet belonged to one of my people... I stopped the flood, yes, but my fury carved destruction far beyond what I intended.",
+      "And the land bore the scars of my rage. It’s a heavy weight, carrying that power, knowing what it can do. But I’d bear that flame again.",
+      "It is not a gentle flame but an inferno and I'd to anything to keep those I care about safe."
+
+    ],
+    "GrantedTags": [
+      "Rage_Memory"
+    ]
+  },
+  {
+    "Initiator": "Loom",
+    "Priority": 10,
+    "RequiredTags": [
+
+    ],
+    "ExcludedByTags": [
+
+    ],
+    "ProfilePic": "Auren",
+    "TextBlocks": [
+      "<i> A tall, fae-like figure steps forward, their face a blazing inferno </i>",
+      "Ah, my loom. I wove so many dreams into its threads—bright, fiery patterns that burned with life.",
+      "Passion is like that. It doesn’t simmer or fade; it demands to be felt, to be seen.",
+      "Every thread I wove burned brighter than the last, until the loom could hold no more.",
+      "<i> They chuckle softly, shaking their head. </i>",
+      "It’s dangerous, letting your heart blaze like that. But oh, how beautiful it is while it lasts."
+    ],
+    "GrantedTags": [
+      "Auren"
+    ]
+  },
+  {
+    "Initiator": "Banner",
+    "Priority": 10,
+    "RequiredTags": [
+      "Auren"
+    ],
+    "ExcludedByTags": [
+
+    ],
+    "ProfilePic": "Auren",
+    "TextBlocks": [
+      "<i> They pick up the banner delicately, the glowing veins beneath their skin flickering softly.</i>",
+      "This… was supposed to be my masterpiece. A banner for my people, woven with their stories, their triumphs, their hopes.",
+      "Every thread held meaning, every color told a tale. But passion… it demands too much sometimes.",
+      "I tried to weave everything, to pour my whole being into it, and it unraveled before it was ever complete.",
+      "<i> They run their fingers over the edges of the banner, their voice growing wistful.</i>",
+      "It’s a painful thing, leaving something unfinished. But maybe that’s the point.",
+      "Passion is a fire that keeps us creating, keeps us reaching.,",
+      "Even when the work isn’t done, the spark it leaves behind is enough to inspire others to continue the story."
+    ],
+    "GrantedTags": [
+      "Passion_Memory"
+    ]
+  }
+]

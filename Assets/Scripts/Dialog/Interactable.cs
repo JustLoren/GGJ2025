@@ -29,10 +29,13 @@ public class Interactable : MonoBehaviour
             visualFx.Play(true);
         else
             visualFx.Stop();
+
+        spriteObj.SetActive(visible);
     }
 
     public string ActorName;
     public ParticleSystem visualFx;
+    public GameObject spriteObj;
     bool _isPrompted = false;
     private void OnTriggerEnter(Collider other)
     {

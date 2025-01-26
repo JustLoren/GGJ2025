@@ -65,6 +65,7 @@ public class SceneLoader : MonoBehaviour
 
     // Optionally track the currently loaded sub-scene if you only want ONE sub-scene at a time
     private string currentSubScene;
+    private bool isLoading = false;
 
     /// <summary>
     /// Loads a sub-scene additively on top of the Base (main) Scene.
@@ -79,8 +80,8 @@ public class SceneLoader : MonoBehaviour
             var loadOp = SceneManager.LoadSceneAsync(sceneName, LoadSceneMode.Additive);
             loadOp.completed += (asyncOp) =>
             {
-                // Store the name of the currently loaded sub-scene if you only allow one at a time
                 currentSubScene = sceneName;
+                // Store the name of the currently loaded sub-scene if you only allow one at a time
                 Debug.Log($"Sub-scene '{sceneName}' loaded additively.");
                 witchCharacter.SetLocalPositionAndRotation(Vector3.zero, Quaternion.identity);
                 ToggleUI(false);
