@@ -976,12 +976,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d062f3e8a141ffe4d933d2cefc0ccb4b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fadeTime: 0.75
+  fadeTime: 0.2
   soundEntries:
   - name: title
-    clip: {fileID: 8300000, guid: 9a8f07ca03c0cfe48894aa6da85f3ea8, type: 3}
-  - name: intro
-    clip: {fileID: 8300000, guid: 74d5cc1995c4a0e4f98f6c5591497c94, type: 3}
+    clip: {fileID: 8300000, guid: 990590b3645365c4889fc492ff6e7aef, type: 3}
+  - name: Candy
+    clip: {fileID: 8300000, guid: dfe2dd21776c22149a35ee917478a1de, type: 3}
+  - name: Graveyard
+    clip: {fileID: 8300000, guid: bb3dbc79f96f1ca42a37a03aac31cf90, type: 3}
+  - name: Caldera
+    clip: {fileID: 8300000, guid: 3de86e516c6eefc479c6066518cf5a24, type: 3}
+  - name: End
+    clip: {fileID: 8300000, guid: b930e396582011a4da27178673db71b9, type: 3}
+  - name: Intro
+    clip: {fileID: 8300000, guid: cdb1031b93bb9b3488a4065d51963866, type: 3}
 --- !u!4 &740651740
 Transform:
   m_ObjectHideFlags: 0
@@ -1010,7 +1018,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.301
   m_Pitch: 1
   Loop: 1
   Mute: 0

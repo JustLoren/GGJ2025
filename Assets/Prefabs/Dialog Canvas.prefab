@@ -34,7 +34,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -22.723083, y: 154.56003}
+  m_AnchoredPosition: {x: -22.723145, y: 154.56003}
   m_SizeDelta: {x: -389.731, y: -676.127}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &269228544117345111
@@ -749,7 +749,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -52.28656, y: -177.14899}
+  m_AnchoredPosition: {x: -52.28662, y: -177.14899}
   m_SizeDelta: {x: -594.415, y: -1021.23}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4189604575852666579
@@ -1470,6 +1470,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3874420762600125448}
   - component: {fileID: 7144723499529423797}
+  - component: {fileID: 4770130771612297807}
   m_Layer: 5
   m_Name: Game Over Screen
   m_TagString: Untagged
@@ -1515,6 +1516,19 @@ MonoBehaviour:
   nextIndicator: {fileID: 0}
   doneIndicator: {fileID: 0}
   gameOverActor: game-over
+--- !u!114 &4770130771612297807
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6734992910319574284}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd6b9757af031a846a22a9984383cf5f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clipName: End
 --- !u!1 &6916714595912904059
 GameObject:
   m_ObjectHideFlags: 0
