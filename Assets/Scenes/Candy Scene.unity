@@ -270,7 +270,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 66a1514bdcc6426478e7a0542b616ba9, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.04
+      value: 0.29
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 66a1514bdcc6426478e7a0542b616ba9, type: 3}
       propertyPath: m_LocalPosition.y
@@ -278,11 +278,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 66a1514bdcc6426478e7a0542b616ba9, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.63
+      value: 9.28
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 66a1514bdcc6426478e7a0542b616ba9, type: 3}
       propertyPath: m_LocalRotation.w
-      value: -0.00016495003
+      value: -0.7198006
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 66a1514bdcc6426478e7a0542b616ba9, type: 3}
       propertyPath: m_LocalRotation.x
@@ -290,7 +290,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 66a1514bdcc6426478e7a0542b616ba9, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 1
+      value: 0.69418097
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 66a1514bdcc6426478e7a0542b616ba9, type: 3}
       propertyPath: m_LocalRotation.z
@@ -302,7 +302,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 66a1514bdcc6426478e7a0542b616ba9, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 180.019
+      value: 272.076
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 66a1514bdcc6426478e7a0542b616ba9, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -440,7 +440,7 @@ Light:
   serializedVersion: 11
   m_Type: 1
   m_Color: {r: 0.98490566, g: 0.9728266, b: 0.81579924, a: 1}
-  m_Intensity: 2.3
+  m_Intensity: 1.21
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
