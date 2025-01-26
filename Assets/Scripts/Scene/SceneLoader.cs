@@ -1,4 +1,5 @@
 ﻿using NUnit.Framework;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
@@ -73,22 +74,27 @@ public class SceneLoader : MonoBehaviour
     /// <param name="sceneName">The name of the sub-scene to load.</param>
     public void LoadSubSceneAdditive(string sceneName)
     {
+        var loadAction = new Action(() =>
+        {
+            var loadOp = SceneManager.LoadSceneAsync(sceneName, LoadSceneMode.Additive);
+            loadOp.completed += (asyncOp) =>
+            {
+                // Store the name of the currently loaded sub-scene if you only allow one at a time
+                currentSubScene = sceneName;
+                Debug.Log($"Sub-scene '{sceneName}' loaded additively.");
+                witchCharacter.SetLocalPositionAndRotation(Vector3.zero, Quaternion.identity);
+                ToggleUI(false);
+            };
+        });
+
         // If you only ever want one sub-scene loaded at a time, you can choose to unload the current one first:
         if (!string.IsNullOrEmpty(currentSubScene) && currentSubScene != sceneName)
         {
-            UnloadSubScene(currentSubScene);
-        }
-
-        // Load scene additively
-        var loadOp = SceneManager.LoadSceneAsync(sceneName, LoadSceneMode.Additive);
-        loadOp.completed += (asyncOp) =>
+            UnloadSubScene(currentSubScene, loadAction);
+        } else
         {
-            // Store the name of the currently loaded sub-scene if you only allow one at a time
-            currentSubScene = sceneName;
-            Debug.Log($"Sub-scene '{sceneName}' loaded additively.");
-            witchCharacter.SetLocalPositionAndRotation(Vector3.zero, Quaternion.identity);
-            ToggleUI(false);
-        };
+            loadAction();
+        }
     }
 
     private void ToggleUI(bool visible)
@@ -103,7 +109,7 @@ public class SceneLoader : MonoBehaviour
     /// Unloads the given sub-scene (if loaded).
     /// </summary>
     /// <param name="sceneName">The name of the sub-scene to unload.</param>
-    public void UnloadSubScene(string sceneName)
+    public void UnloadSubScene(string sceneName, Action followUp)
     {
         Scene sceneToUnload = SceneManager.GetSceneByName(sceneName);
 
@@ -115,6 +121,8 @@ public class SceneLoader : MonoBehaviour
             {
                 if (sceneName == currentSubScene) currentSubScene = null;
                 Debug.Log($"Sub-scene '{sceneName}' unloaded.");
+
+                followUp();
             };
         }
         else
