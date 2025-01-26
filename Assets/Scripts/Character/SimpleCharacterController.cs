@@ -65,6 +65,7 @@ public class SimpleCharacterController : MonoBehaviour
         if (!allowMovement)
         {
             moveInput = Vector2.zero;
+            bouncer.SetMoving(moveInput * moveSpeed);
             return;
         }
 

@@ -86,9 +86,7 @@ public class BouncySprite : MonoBehaviour
             }
         }
         else
-        {            
-            currentBounceFactor = Mathf.Clamp01(currentBounceFactor - Time.deltaTime * bounceFadeFactor);
-
+        {
             if (!isDescending)
             {
                 isDescending = true;
@@ -97,7 +95,11 @@ public class BouncySprite : MonoBehaviour
 
                 sourceRotation = Quaternion.Euler(0, 0, transform.localRotation.z);
                 targetRotation = Quaternion.Euler(0, 0, 0);
+                bounceProgress = 0f;
             }
+
+            currentBounceFactor = Mathf.Clamp01(currentBounceFactor - Time.deltaTime * bounceFadeFactor);
+            bounceProgress = Mathf.Clamp(bounceProgress + Time.deltaTime, 0, bounceSpeed);
         }
 
         rotationPct = rotationProgress / rotationSpeed;

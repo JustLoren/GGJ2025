@@ -91,9 +91,13 @@ public class SceneLoader : MonoBehaviour
         if (!string.IsNullOrEmpty(currentSubScene) && currentSubScene != sceneName)
         {
             UnloadSubScene(currentSubScene, loadAction);
-        } else
+        }
+        else if (currentSubScene != sceneName)
         {
             loadAction();
+        } else
+        {
+            ToggleUI(false);
         }
     }
 

@@ -1156,13 +1156,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minDistanceForBounce: 0.05
-  minBounceElevation: 0.1
+  minBounceElevation: 0
   maxBounceElevation: 0.5
-  minBounceAngle: -10
-  maxBounceAngle: 10
-  bounceFadeFactor: 5
-  bounceSpeed: 0.25
-  rotationSpeed: 0.15
+  minBounceAngle: -8
+  maxBounceAngle: 8
+  bounceFadeFactor: 0.1
+  bounceSpeed: 0.68
+  rotationSpeed: 0.42
 --- !u!212 &1071540097
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1719,7 +1719,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4359752489703168837, guid: 1c58d59d5aac1224196daafa9686c811, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -52.286987
+      value: -52.286377
       objectReference: {fileID: 0}
     - target: {fileID: 4359752489703168837, guid: 1c58d59d5aac1224196daafa9686c811, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -1728,6 +1728,10 @@ PrefabInstance:
     - target: {fileID: 5801287868530646794, guid: 1c58d59d5aac1224196daafa9686c811, type: 3}
       propertyPath: m_hasFontAssetChanged
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8036172224512282503, guid: 1c58d59d5aac1224196daafa9686c811, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -22.722412
       objectReference: {fileID: 0}
     - target: {fileID: 8794632355832628162, guid: 1c58d59d5aac1224196daafa9686c811, type: 3}
       propertyPath: m_Name
