@@ -983,9 +983,9 @@ MonoBehaviour:
   - name: Candy
     clip: {fileID: 8300000, guid: 37cbbe3579f67db418ce14a6414535d5, type: 3}
   - name: Graveyard
-    clip: {fileID: 8300000, guid: bb3dbc79f96f1ca42a37a03aac31cf90, type: 3}
+    clip: {fileID: 8300000, guid: ddf2712d03d86d64895447046d1082be, type: 3}
   - name: Caldera
-    clip: {fileID: 8300000, guid: 3de86e516c6eefc479c6066518cf5a24, type: 3}
+    clip: {fileID: 8300000, guid: b6096646f0857cf41aba5ae637afb29f, type: 3}
   - name: End
     clip: {fileID: 8300000, guid: b930e396582011a4da27178673db71b9, type: 3}
   - name: Intro
@@ -1018,7 +1018,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 0.15
+  m_Volume: 1
   m_Pitch: 1
   Loop: 1
   Mute: 0
