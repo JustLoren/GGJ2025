@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameOverPlayer : DialogPlayer
 {
@@ -23,7 +24,8 @@ public class GameOverPlayer : DialogPlayer
         {
             //Ok we're done!
 
-            //reset the state somehow (re-load the main scene?)
+            //Reload the main scene
+            SceneManager.LoadScene("Main", LoadSceneMode.Single);
         }
 
         return result;

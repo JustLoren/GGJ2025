@@ -814,6 +814,7 @@ MonoBehaviour:
   - {fileID: 8220388044318833466}
   - {fileID: 4191722179904997739}
   - {fileID: 4866936948832656195}
+  witchCharacter: {fileID: 0}
 --- !u!1 &7777541485608042835
 GameObject:
   m_ObjectHideFlags: 0
@@ -1070,4 +1071,16 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 562634059058167010}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 8424479862553713463}
+        m_TargetAssemblyTypeName: SceneLoader, Assembly-CSharp
+        m_MethodName: LoadSubSceneAdditive
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Graveyard Scene
+          m_BoolArgument: 0
+        m_CallState: 2

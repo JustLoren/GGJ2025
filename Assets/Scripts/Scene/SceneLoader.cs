@@ -11,6 +11,24 @@ using UnityEngine.SceneManagement;
 /// </summary>
 public class SceneLoader : MonoBehaviour
 {
+    #region Singleton stuff
+    public static SceneLoader Instance;
+    public void Start()
+    {
+        if (Instance == null)
+            Instance = this;
+        else
+            Debug.LogError("Two SceneLoader are not allowed, crackhead");
+    }
+
+    private void OnDestroy()
+    {
+        if (Instance == this)
+            Instance = null;
+    }
+    #endregion
+
+    public static bool IsMapVisible => Instance.uiObjects.First().activeSelf;
 
     #region Input Section
     public InputActionReference toggleMapAction;
@@ -35,8 +53,8 @@ public class SceneLoader : MonoBehaviour
 
     private void Update()
     {
-        if (toggleMapAction != null && toggleMapAction.action.WasPressedThisFrame() && currentSubScene != null)
-        {
+        if (toggleMapAction != null && toggleMapAction.action.WasPressedThisFrame() && currentSubScene != null && !DialogDisplay.IsDialogVisible)
+        {            
             ToggleUI(!uiObjects.First().activeSelf);
         }
     }
@@ -75,6 +93,9 @@ public class SceneLoader : MonoBehaviour
 
     private void ToggleUI(bool visible)
     {
+        if (DialogDisplay.IsPromptVisible)
+            DialogDisplay.Instance.SuppressPrompt(visible);
+
         uiObjects.ForEach(obj => obj.SetActive(visible));
     }
 

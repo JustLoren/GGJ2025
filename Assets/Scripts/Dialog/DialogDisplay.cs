@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -26,6 +27,9 @@ public class DialogDisplay : MonoBehaviour
     private bool activeDialog => DialogPlayer.gameObject.activeSelf;
     private bool activeMemory => MemoryPlayer.gameObject.activeSelf;
     private bool isGameOver => MemoryList.GameOverPlayer.gameObject.activeSelf;
+
+    public static bool IsDialogVisible => Instance.activeDialog || Instance.activeMemory || Instance.isGameOver;
+    public static bool IsPromptVisible => Instance.activePrompt != null;
     
     public void ShowDialog(Interactable interactable)
     {
@@ -63,6 +67,14 @@ public class DialogDisplay : MonoBehaviour
         }
     }
 
+    public void SuppressPrompt(bool visible)
+    {
+        if (activePrompt != null)
+        {
+            PromptArea.SetActive(!visible);
+        }
+    }
+
     #region Input Section
     public InputActionReference interactAction;
     public InputActionReference cancelAction;
@@ -89,6 +101,10 @@ public class DialogDisplay : MonoBehaviour
 
     private void Update()
     {
+        //We don't do stuff when the map is up
+        if (SceneLoader.IsMapVisible)
+            return;            
+
         if (activePrompt != null && interactAction.action.WasPressedThisFrame())
         {
             var selectedPrompt = activePrompt;
