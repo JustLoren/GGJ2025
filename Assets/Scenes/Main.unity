@@ -254,8 +254,8 @@ MonoBehaviour:
     ExcludedByTags: []
     ProfilePic: Cupcake
     TextBlocks:
-    - <i> A lollipop has been shoved into the ground, clearly watered like a plant.</i>
-    - "Do you like Candy! It's my Favorite. My sister and I planted it, hoping it\u2019d
+    - <i>A lollipop has been shoved into the ground, clearly watered like a plant</i>
+    - "Do you like candy? It's my favorite. My sister and I planted it, hoping it\u2019d
       grow into a lollipop tree."
     - We checked it every single day, laughing about what kind of candy flowers it
       might bloom.
@@ -269,8 +269,8 @@ MonoBehaviour:
     ExcludedByTags: []
     ProfilePic: Fairy
     TextBlocks:
-    - <i> Emerging from the forest is a small winged creature with glowing moths
-      for compainions. She speaks slowly and softly.</i>
+    - <i>Emerging from the forest is a small winged creature with glowing moths for
+      companions. She speaks slowly and softly</i>
     - "Oh, you found one. Aren\u2019t they beautiful? Their glow is so gentle, like
       a tiny flame that doesn\u2019t burn."
     - "They don\u2019t think about why they shine or where their wings will take
@@ -278,7 +278,7 @@ MonoBehaviour:
     - No questions.
     - No doubts.
     - Just light.
-    - <i> She pauses, their gaze distant.</i>
+    - <i>She pauses, her gaze distant</i>
     - "There\u2019s a kind of freedom in that, don\u2019t you think?"
     - "To not wonder what\u2019s waiting in the dark, to simply follow what feels
       warm and safe."
@@ -292,13 +292,13 @@ MonoBehaviour:
     ExcludedByTags: []
     ProfilePic: Fairy
     TextBlocks:
-    - <i> Kneeling by the lantern, she speaks again.</i>
+    - <i>Kneeling by the lantern, she speaks again</i>
     - "This poor thing\u2026 it once held so much light, but now it\u2019s broken."
     - "Funny, isn\u2019t it? How we rely on something to hold the glow for us, instead
       of just becoming the light ourselves."
     - "But the lantern doesn\u2019t ask why it broke, and the moths don\u2019t mourn
       its loss. They just move on to the next glow."
-    - <i> The Fairy's voice grows softer, almost wistful.</i>
+    - <i>The Fairy's voice grows softer, almost wistful</i>
     - That's the trick of it really. The less you know, the less it hurts.
     - Isn't that what we all want? To let the light guide us without ever asking
       where it leads?
@@ -311,7 +311,7 @@ MonoBehaviour:
     ProfilePic: Cat
     TextBlocks:
     - <i>A ghostly little cat appears nearby, bones of a fish held proudly in it's
-      mouth.</i>
+      mouth</i>
     - "Oh, that feather? It was my favorite. My person used to wave it in front of
       me, and I\u2019d pounce!"
     - Over and over, until we were both laughing so hard we forgot the time.
@@ -327,7 +327,7 @@ MonoBehaviour:
     ExcludedByTags: []
     ProfilePic: Cat
     TextBlocks:
-    - "This\u2026 this was theirs. They never took it off."
+    - This... this was theirs. They never took it off.
     - "I didn\u2019t know why at first, but I could feel it made them sad."
     - "I didn\u2019t understand sadness back then, not really, but I knew I had to
       stay close."
@@ -341,14 +341,13 @@ MonoBehaviour:
     ExcludedByTags: []
     ProfilePic: Cedric
     TextBlocks:
-    - <i> A calm and solemn man approaches, brushing dirt from his hands</i>
+    - <i>A calm and solemn man approaches, brushing dirt from his hands</i>
     - "Ah, the flower. It didn\u2019t last long, did it?"
     - "That\u2019s the way of things here. Beauty fades, no matter how carefully
       we nurture it."
     - 'Still, I plant them because they remind us of something important:'
     - That even the briefest life leaves a mark, a moment of color in a gray world.
-    - <i> He kneels to gently pick up the flower, holding it as if it were a treasure.
-      </i>
+    - <i>He kneels to gently pick up the flower, holding it as if it were a treasure</i>
     - I think the dead deserve that. To be remembered, not just for who they were,
       but for how they made the world bloom around them.
     GrantedTags:
@@ -360,8 +359,7 @@ MonoBehaviour:
     ExcludedByTags: []
     ProfilePic: Cedric
     TextBlocks:
-    - <i> He sighs, reliving a pleasant memory while picking up an old watering can
-      </i>
+    - <i>He sighs, reliving a pleasant memory while picking up an old watering can</i>
     - This old thing has seen so much work. So many graves tended, so many plants
       watered.
     - This was my wife's. She was the one who taught me how to garden, taught me
@@ -369,8 +367,8 @@ MonoBehaviour:
     - "She's the reason I\u2019m here, you know."
     - "Her grave was the first one I tended. And\u2026 the last one I\u2019ll ever
       forget."
-    - <i> His voice falters for the briefest of moments. He takes a deep breath,
-      regaining his composure.</i>
+    - <i>His voice falters for the briefest of moments. He takes a deep breath, regaining
+      his composure</i>
     - "Grief never truly leaves you. It doesn\u2019t fade like the flowers do."
     - But it changes you, roots itself deep inside.
     - "It reminds you of what you\u2019ve lost, but also what you\u2019ve gained
@@ -387,8 +385,8 @@ MonoBehaviour:
     - <i>The hulking rock paused in quiet reflection</i>
     - There was a flood, a roaring, unstoppable force. My village was in its path.
       I shattered a mountian to stop it, my rage fueling my strength.
-    - "The waters halted, and the village was safe. But that anger\u2026 it left
-      cracks in the stone, and in me."
+    - The waters halted, and the village was safe. But that anger... it left cracks
+      in the stone, and in me.
     GrantedTags:
     - Rock Lover
   - Initiator: Helmet
@@ -413,14 +411,14 @@ MonoBehaviour:
     ExcludedByTags: []
     ProfilePic: Auren
     TextBlocks:
-    - <i> A tall, fae-like figure steps forward, their face a blazing inferno </i>
+    - <i>A tall, fae-like figure steps forward, their face a blazing inferno</i>
     - "Ah, my loom. I wove so many dreams into its threads\u2014bright, fiery patterns
       that burned with life."
     - "Passion is like that. It doesn\u2019t simmer or fade; it demands to be felt,
       to be seen."
     - Every thread I wove burned brighter than the last, until the loom could hold
       no more.
-    - <i> They chuckle softly, shaking their head. </i>
+    - <i>They chuckle softly, shaking their head</i>
     - "It\u2019s dangerous, letting your heart blaze like that. But oh, how beautiful
       it is while it lasts."
     GrantedTags:
@@ -432,16 +430,16 @@ MonoBehaviour:
     ExcludedByTags: []
     ProfilePic: Auren
     TextBlocks:
-    - <i> They pick up the banner delicately, the glowing veins beneath their skin
-      flickering softly.</i>
-    - "This\u2026 was supposed to be my masterpiece. A banner for my people, woven
-      with their stories, their triumphs, their hopes."
-    - "Every thread held meaning, every color told a tale. But passion\u2026 it demands
-      too much sometimes."
+    - <i>They pick up the banner delicately, the glowing veins beneath their skin
+      flickering softly</i>
+    - This... was supposed to be my masterpiece. A banner for my people, woven with
+      their stories, their triumphs, their hopes.
+    - Every thread held meaning, every color told a tale. But passion... it demands
+      too much sometimes.
     - I tried to weave everything, to pour my whole being into it, and it unraveled
       before it was ever complete.
-    - <i> They run their fingers over the edges of the banner, their voice growing
-      wistful.</i>
+    - <i>They run their fingers over the edges of the banner, their voice growing
+      wistful</i>
     - "It\u2019s a painful thing, leaving something unfinished. But maybe that\u2019s
       the point."
     - Passion is a fire that keeps us creating, keeps us reaching.,
@@ -1719,7 +1717,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4359752489703168837, guid: 1c58d59d5aac1224196daafa9686c811, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -52.286377
+      value: -52.28607
       objectReference: {fileID: 0}
     - target: {fileID: 4359752489703168837, guid: 1c58d59d5aac1224196daafa9686c811, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -1731,7 +1729,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8036172224512282503, guid: 1c58d59d5aac1224196daafa9686c811, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -22.722412
+      value: -22.722595
       objectReference: {fileID: 0}
     - target: {fileID: 8794632355832628162, guid: 1c58d59d5aac1224196daafa9686c811, type: 3}
       propertyPath: m_Name
