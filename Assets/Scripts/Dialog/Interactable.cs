@@ -18,7 +18,8 @@ public class Interactable : MonoBehaviour
 
     private void OnDestroy()
     {
-        DialogLibrary.Instance.OnTagsChanged -= DialogLibrary_OnTagsChanged;
+        if (DialogLibrary.Instance != null)
+            DialogLibrary.Instance.OnTagsChanged -= DialogLibrary_OnTagsChanged;
     }
 
     private void DialogLibrary_OnTagsChanged(object sender, System.EventArgs e)
