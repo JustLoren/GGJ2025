@@ -31,6 +31,8 @@ public class MemoryPlayer : MonoBehaviour
 
     private void Toggle(bool visible)
     {
+        SimpleCharacterController.AllowMovement(!visible);
+
         this.gameObject.SetActive(visible);
 
         if (!visible) activeEntry = null;
